@@ -18,7 +18,7 @@
     },
     {
         "name": "Mall Information",
-        "id": "services_link",
+        "id": "mall_info_link",
         "href": "#",
         "show_sub_menu": false,
         "sub_menu": [
