@@ -13,7 +13,7 @@
         {
         "name": "Events",
         "id": "events_link",
-        "href": "/promotions_and_events",
+        "href": "/events",
         "show_sub_menu": false
     },
     {
