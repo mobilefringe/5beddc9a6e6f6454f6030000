@@ -5,7 +5,7 @@
         "href": "/stores"
     },
     {
-        "name": "Promotions and Events",
+        "name": "Promotions",
         "id": "events_link",
         "href": "/promotions_and_events",
         "show_sub_menu": false
