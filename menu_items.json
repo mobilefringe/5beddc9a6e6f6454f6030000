@@ -25,7 +25,11 @@
             {
                 "name": "Accessibilty ",
                 "href": "/pages/holtrenfrew-accessibility"
-            }
+            },
+            {
+                "name": "Hours ",
+                "href": "/hours"
+            },
         ]
     },
     {
@@ -38,10 +42,7 @@
                 "name": "Contact Us ",
                 "href": "/contact_us"
             },
-            {
-                "name": "Hours ",
-                "href": "/hours"
-            },
+            
             {
                 "name": "Directions",
                 "href": "/find_us"
