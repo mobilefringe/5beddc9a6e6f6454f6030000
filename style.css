@@ -393,7 +393,7 @@ a{
     padding: 6px 5px;
     width: 100%;
     margin-left: 0;
-    &.hvr-underline-from-centerbefore{
+    &.hvr-underline-from-center:before{
         width: 80%;
     }
 }
