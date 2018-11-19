@@ -109,22 +109,6 @@
     	</div>
     	<div class="menu-container hidden-phone ">
     		<div class="menu-div page_container">
-    			<!--<div v-for="item in menu_items" :class="item.parent_class_list" style="display: inline-block;padding: 0 20px;">-->
-    			<!--	<router-link :to="item.href" class="all_caps menu_link hvr-underline-from-center"  :id="item.id" exact v-if="item.sub_menu == undefined">-->
-    			<!--		{{item.name}}-->
-    			<!--	</router-link>-->
-    			<!--	<div v-else class="all_caps dropdown" :class="{open : item.show_sub_menu}">-->
-    			<!--		<a href="#" class="menu_link dropdown-toggle hvr-underline-from-center" :id="item.id" @click="toggleSubMenu(item.id); item.show_sub_menu = !item.show_sub_menu" data-toggle="dropdown" aria-haspopup="true" :aria-expanded="item.show_sub_menu">{{item.name}} </a>-->
-    			<!--		<transition name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">-->
-    			<!--			<div class="dropdown-menu" v-if="item.sub_menu" v-show="item.show_sub_menu">-->
-    			<!--			    <li v-for="sub_menu in item.sub_menu">-->
-						 <!--           <a v-if="sub_menu.external" :href="sub_menu.href" class="dropdown-item" target="_blank">{{sub_menu.name}}</a>-->
-					  <!--              <router-link  v-else tag="a" class="dropdown-item"  :to="sub_menu.href">{{sub_menu.name}}</router-link>-->
-    			<!--			    </li>-->
-    			<!--			</div>-->
-    			<!--		</transition>-->
-    			<!--	</div>-->
-    			<!--</div>-->
     			<div class="row top_nav hidden_phone">
 					<nav id="primary_nav">
 						<ul>
