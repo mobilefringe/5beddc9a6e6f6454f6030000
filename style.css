@@ -2435,7 +2435,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 .store-listing li{
     list-style:none;
     color:#000;
-    font:12px/14px Arial,sans-serif;
+    // font:12px/14px Arial,sans-serif;
 }
 .directory_title {
     border-bottom:1px solid #aea99e;
