@@ -19,7 +19,7 @@
     {
         "name": "Mall Information",
         "id": "mallInfo_link",
-        "href": "#",
+        "href": "",
         "show_sub_menu": false,
         "sub_menu": [
             {
