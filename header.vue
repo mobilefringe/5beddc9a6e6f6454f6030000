@@ -117,7 +117,7 @@
 						        <ul v-if="item.sub_menu">
 						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
 						                <a v-if="sub_menu.external" :href="sub_menu.href" target="_blank" class="hvr-underline-from-center">{{$t(sub_menu.name)}}</a>
-							            <router-link v-else :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
+							            <router-link v-else :to="sub_menu.href" class="hvr-underline-from-center">{{$t(sub_menu.name)}}</router-link>
 						            </li>
 								</ul>
 						    </li>
