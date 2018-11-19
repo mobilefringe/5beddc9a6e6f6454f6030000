@@ -11,7 +11,7 @@
         "show_sub_menu": false
     },
         {
-        "name": "Events",
+        "name": "News",
         "id": "events_link",
         "href": "/events",
         "show_sub_menu": false
@@ -24,12 +24,12 @@
         "sub_menu": [
             {
                 "name": "Guest Services ",
-                "href": "/pages/rollinghill-accessibility"
+                "href": "/pages/rollinghills-accessibility"
             },
             {
                 "name": "Hours ",
                 "href": "/hours"
-            },
+            }
         ]
     },
     {
