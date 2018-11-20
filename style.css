@@ -3287,6 +3287,9 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
     display:inline-block;
     cursor: pointer;
     margin: 0 2px;
+    &:hover {
+        background-color:$primary;
+    }
 }
 .social_share .social_icons{
     width : 24px!important;
