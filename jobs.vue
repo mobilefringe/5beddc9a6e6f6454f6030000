@@ -14,7 +14,7 @@
 					<p class="promo_div_description">{{promo.description_short}}</p>
 					<div class="promo_feature_share row is-table-row">
     					<span class="feature_read_more col-sm-6">
-    						<router-link :to="'/jobs/'+promo.slug" class="mobile_readmore hvr-sweep-to-right" >
+    						<router-link :to="'/jobs/'+promo.slug" class="mobile_readmore" >
     							<p class="feature-readmore" :aria="promo.name">View Job Detail <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
