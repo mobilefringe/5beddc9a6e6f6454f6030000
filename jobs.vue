@@ -111,7 +111,7 @@
             },
             methods: {
                 shareURL(slug) {
-                    var share_url = "http://holtrenfrewcentre.ca/jobs/" + slug;
+                    var share_url = "http://rollinghills.ca/jobs/" + slug;
                     return share_url;
                 }
             }
