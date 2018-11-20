@@ -3284,6 +3284,9 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
     color: #fff;
     border-radius: 20px;
     padding: 2px;
+    display:inline-block;
+    cursor: pointer;
+    margin: 0 2px;
 }
 .social_share .social_icons{
     width : 24px!important;
