@@ -168,7 +168,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url= "https://rollinghills.ca/promotions_and_events/" + slug;
+                    var share_url= "https://rollinghills.ca/promotions/" + slug;
                     return share_url;
                 }
             }
