@@ -142,7 +142,7 @@
                     suggestionAttribute: 'name',
                     newsletter_email: "",
                     menu_items: MenuItems,
-                    propertyLogo: "//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1526421499700/Mall Logo.png"
+                    propertyLogo: "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/png/1542727293603/placeholder_300x100.png"
                 }
             },
             watch: {
