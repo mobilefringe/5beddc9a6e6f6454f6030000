@@ -34,11 +34,11 @@
                                 <div class="blog-social-share">
                                     <div class="social_share">
                                         <network network="facebook">
-                                        <i class="fa fa-facebook"></i>
-                                    </network>
-                                    <network network="twitter">
-                                        <i class="fa fa-twitter"></i>
-                                    </network>
+                                            <i class="fa fa-facebook"></i>
+                                        </network>
+                                        <network network="twitter">
+                                            <i class="fa fa-twitter"></i>
+                                        </network>
                                     </div>
                                 </div>
                             </social-sharing>
@@ -241,12 +241,7 @@
                     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
                 },
                 shareURL(slug){
-                    var share_url= "https://holtrenfrewcentre.ca/promotions_and_events/" + slug;
-                    // if(promo.type = "event") {
-                        
-                    // } else {
-                    //     share_url= "http://holtrenfrewcentre.ca/promotions/" + slug;
-                    // }
+                    var share_url= "https://holtrenfrewcentre.ca/promotions/" + slug;
                     return share_url;
                 },
             }
