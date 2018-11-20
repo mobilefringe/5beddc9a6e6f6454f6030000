@@ -89,13 +89,13 @@
     							Open Today: {{getTodayHours.open_time | moment("h:mma", timezone)}} - {{getTodayHours.close_time | moment("h:mma", timezone)}}
     						</div>
     						<div class="social_icons_menu show_phone text-center">
-    							<a href="https://www.facebook.com/HoltRenfrewCentre/" target="_blank">
+    							<a href="https://www.facebook.com/" target="_blank">
     							    <i class="fa fa-facebook"></i><p style="display:none;">Facebook icon</p>
     							</a>
-    							<a href="https://twitter.com/hrctoronto" target="_blank">
+    							<a href="https://twitter.com" target="_blank">
     							    <i class="fa fa-twitter"></i><p style="display:none;">Twitter icon</p>
     							</a>
-    							<a href="https://www.instagram.com/holtrenfrewcentre/" target="_blank">
+    							<a href="https://www.instagram.com/" target="_blank">
     							    <i class="fa fa-instagram"></i><p style="display:none;">Instagram icon</p>
     							</a>
     							<!--<a href="https://www.pinterest.com/hrctoronto/" target="_blank">-->
