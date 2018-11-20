@@ -84,7 +84,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
         created() {
             this.loadData().then(response => {
                 this.dataLoaded = true;
-                this.property.default_logo_url = "http://via.placeholder.com/600";
+                this.property.default_logo_url = "http://via.placeholder.com/600/000/ccc";
             });
 
         },
