@@ -34,10 +34,10 @@
                                 <div class="blog-social-share">
                                     <div class="social_share">
                                         <network network="facebook">
-                                        <img src="//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
+                                        <i class="fa fa-facebook"></i>
                                     </network>
                                     <network network="twitter">
-                                        <img src="//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1511797704155/twitter.png" class="social_icons" alt="">
+                                        <i class="fa fa-twitter"></i>
                                     </network>
                                     </div>
                                 </div>
