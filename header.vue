@@ -54,7 +54,7 @@
     				<div class="mobile_menu_container" v-show="show_mobile_menu">
     					<div class="opened_mobile_menu" >
     						<div class="text-left mobile-site-logo">
-    							<img :src="propertyLogo"  alt="Holt Renfrew Mobile Logo">
+    							<img :src="propertyLogo"  :alt="property.name + ' Mobile Logo'">
     						</div>
     						<ul class="clearfix">
     							<li v-for="(item,key) in menu_items" class="menu_item">
