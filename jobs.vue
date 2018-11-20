@@ -15,7 +15,7 @@
 					<div class="promo_feature_share row is-table-row">
     					<span class="feature_read_more col-sm-6">
     						<router-link :to="'/jobs/'+promo.slug" class="mobile_readmore" >
-    							<p class="feature-readmore" :aria="promo.name">View Job Detail <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+    							<p class="feature-readmore hvr-sweep-to-right" :aria="promo.name">View Job Detail <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
     						</router-link>
     					</span>
     					<div class="text-right  col-sm-6" v-if="promo">
