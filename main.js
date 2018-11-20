@@ -84,7 +84,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
         created() {
             this.loadData().then(response => {
                 this.dataLoaded = true;
-                this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1528474917147/default_logo_square.png";
+                this.property.default_logo_url = "http://via.placeholder.com/600";
             });
 
         },
