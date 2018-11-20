@@ -139,7 +139,7 @@
             },
             methods: {
                 shareURL(slug){
-                    var share_url = "http://holtrenfrewcentre.ca/events/" + slug;
+                    var share_url = "http://rollinghills.ca/events/" + slug;
                     return share_url;
                 }
             }
