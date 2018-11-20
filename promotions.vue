@@ -241,7 +241,7 @@
                     this.selectedDate = moment([year, month, val]).format('MMM D, YYYY');
                 },
                 shareURL(slug){
-                    var share_url= "https://holtrenfrewcentre.ca/promotions/" + slug;
+                    var share_url= "https://rollinghills.ca/promotions/" + slug;
                     return share_url;
                 },
             }
