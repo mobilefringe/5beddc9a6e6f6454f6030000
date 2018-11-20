@@ -23,7 +23,7 @@
                             <div class="blog-social-share">
                                 <div class="social_share">
                                     <network network="facebook">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1511797683914/facebook.png" class="social_icons" alt="">
+                                    <!--<img src="//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1511797683914/facebook.png" class="social_icons" alt="">-->
                                     <i class="fa fa-facebook"></i>
                                 </network>
                                 <network network="twitter">
@@ -57,19 +57,11 @@
     .jobs_container .feature_read_more {
         width : auto;
     }
-    .jobs_container .social_share span {
-        display:inline-block;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        margin: 0 2px;
-    }
-    .jobs_container .social_share .social_icons{
-        width : 24px;
-        height : 24px;
-        display:inline;
-        margin: 0 2px;
-    }
+    /*.jobs_container .social_share span {*/
+    /*    display:inline-block;*/
+    /*    cursor: pointer;*/
+    /*    margin: 0 2px;*/
+    /*}*/
     
 </style>
 
