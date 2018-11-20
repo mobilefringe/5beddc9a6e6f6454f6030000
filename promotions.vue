@@ -191,12 +191,12 @@
                                 value.image_url = value.image_url;
                             }
                             
-                            if(value.eventable_id) {
-                                value.type = "event"
-                            }
-                            else {
-                                value.type = "promotion"
-                            }
+                            // if(value.eventable_id) {
+                            //     value.type = "event"
+                            // }
+                            // else {
+                            //     value.type = "promotion"
+                            // }
                             temp_promo.push(value);
                         }
                     });
