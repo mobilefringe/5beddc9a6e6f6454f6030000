@@ -88,19 +88,6 @@
     .events_container .feature_read_more {
         width : auto;
     }
-    .events_container .social_share network {
-        display:inline-block;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
-    .events_container .social_share .social_icons{
-        width : 24px;
-        height : 24px;
-        display:inline;
-        margin: 0 2px;
-    }
-    
 </style>
 
 <script>
