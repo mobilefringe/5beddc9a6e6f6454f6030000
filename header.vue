@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="top_menu_container">
         <div class="header-container hidden-phone " id="top" >
             <h1 v-if="property" style="display:none;">property.name</h1>
     		<div class="header page_container">
