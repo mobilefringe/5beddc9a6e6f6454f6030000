@@ -78,6 +78,10 @@
         					<div class="feature-box col-sm-4" v-for="item in feature_items">
         						<p class="feature-title">{{item.name}}</p>
         						<img :src="item.image_url" class="feature-image" :alt="'Click here for more info on '+item.name"/>
+        						<router-link :to="feature.url" class="hvr-grow-shadow">
+            						<img class="top_image" :src='feature.image_url' :alt="'Click here for more info on ' +feature.name"/>
+            						<div class="feature_overlay text-uppercase ">{{feature.name}}</div>
+            					</router-link>
         						<!--<p class="feature-html">{{item.html}}</p>-->
         						<!--<span class="feature_read_more">-->
         						<!--    <a v-if="item.external" :href="item.url" class="mobile_readmore" target="_blank">-->
@@ -87,6 +91,10 @@
         						<!--		<p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>-->
         						<!--	</router-link>-->
         						<!--</span>-->
+        						<router-link :to="feature.url" class="hvr-grow-shadow">
+        						<img class="top_image" :src='feature.image_url' :alt="'Click here for more info on ' +feature.name"/>
+        						<div class="feature_overlay text-uppercase ">{{feature.name}}</div>
+        					</router-link>
         					</div>
         				</span>
         			</div>
