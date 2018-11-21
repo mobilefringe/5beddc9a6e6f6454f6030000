@@ -146,6 +146,9 @@
                     smallerHeader: false,
                 }
             },
+            created(){
+                window.addEventListener("scroll", this.makeNavbarSmall);
+            }
             watch: {
                 $route: function() {
                     var vm = this;
