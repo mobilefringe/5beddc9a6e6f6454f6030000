@@ -76,7 +76,7 @@
         			<div class="feature-div">
         				<span>
         					<div class="feature-box col-sm-4" v-for="item in feature_items">
-        						<p class="feature-title">{{item.name}}</p>
+        						<!--<p class="feature-title">{{item.name}}</p>-->
         						<!--<img :src="item.image_url" class="feature-image" :alt="'Click here for more info on '+item.name"/>-->
         						<router-link :to="item.url" class="hvr-grow-shadow">
             						<img class="top_image" :src='item.image_url' :alt="'Click here for more info on ' +item.name"/>
