@@ -79,14 +79,14 @@
         						<p class="feature-title">{{item.name}}</p>
         						<img :src="item.image_url" class="feature-image" :alt="'Click here for more info on '+item.name"/>
         						<!--<p class="feature-html">{{item.html}}</p>-->
-        						<span class="feature_read_more">
-        						    <a v-if="item.external" :href="item.url" class="mobile_readmore" target="_blank">
-        						        <p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
-        						    </a>
-        							<router-link v-else :to="item.url" class="mobile_readmore">
-        								<p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
-        							</router-link>
-        						</span>
+        						<!--<span class="feature_read_more">-->
+        						<!--    <a v-if="item.external" :href="item.url" class="mobile_readmore" target="_blank">-->
+        						<!--        <p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>-->
+        						<!--    </a>-->
+        						<!--	<router-link v-else :to="item.url" class="mobile_readmore">-->
+        						<!--		<p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>-->
+        						<!--	</router-link>-->
+        						<!--</span>-->
         					</div>
         				</span>
         			</div>
