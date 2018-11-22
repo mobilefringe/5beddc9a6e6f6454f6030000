@@ -44,17 +44,6 @@
 </template>
 
 <style>
-    .events_container .date_bar{
-        /* Today: */
-        background: #D3D3D3;
-        height: 40px;
-        line-height: 40px;
-        margin: auto;
-        text-align: center;
-    }
-    .events_container .date_bar .fa{
-        cursor: pointer;
-    }
     .events_container .promo_container{
         border-top: 1px solid #aea99e;
     }
