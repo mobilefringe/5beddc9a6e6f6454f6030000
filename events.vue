@@ -79,6 +79,9 @@
     .events_container .promo_dets {
         border-bottom: 1px solid #aea99e;
     }
+    .events_container .promo_dets:last-child {
+        border-bottom: none;
+    }
     .events_container .row.is-table-row {
         margin: 0;
     }
