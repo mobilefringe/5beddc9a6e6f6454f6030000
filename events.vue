@@ -55,25 +55,6 @@
     .events_container .date_bar .fa{
         cursor: pointer;
     }
-    .events_container .current_date{
-        color: #4a4a4a;
-        padding: 0 10px;
-    }
-    .events_container .all_dates {
-        border-bottom: 1px solid #aea99e;
-    }
-    .events_container .all_dates span {
-        font-size: 16px;
-        color: #000000;
-        letter-spacing: 1.5px;
-        height: 30px;
-        line-height: 30px;
-        padding: 0 5px;
-        cursor: pointer;
-    }
-    .events_container .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
-        background-color: #D3D3D3;
-    }
     {
         border-top: 1px solid #aea99e;
     }
