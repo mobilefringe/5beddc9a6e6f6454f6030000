@@ -74,7 +74,7 @@
         		</div>
         		<div style="border-top:4px double #aea99e">
         			<div class="feature-div">
-        				<span>
+        				<!--<span>-->
         					<div class="feature-box col-sm-4" v-for="item in feature_items">
         						<!--<p class="feature-title">{{item.name}}</p>-->
         						<!--<img :src="item.image_url" class="feature-image" :alt="'Click here for more info on '+item.name"/>-->
@@ -92,7 +92,7 @@
         						<!--	</router-link>-->
         						<!--</span>-->
         					</div>
-        				</span>
+        				<!--</span>-->
         			</div>
         		</div>
         	</div>
