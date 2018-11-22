@@ -12,7 +12,7 @@
                 <!--</div>-->
                 <div class="page_container margin_30">
                     <div class="row">
-                        <div class="col_3">
+                        <div class="col-md-3">
                             <div class="hidden_phone">
                                 <h3 class="inside_page_title">Find Store</h3>
                                 <div class="store_list_container hidden-mobile" v-if="allStores">
