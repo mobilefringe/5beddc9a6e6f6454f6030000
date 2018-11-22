@@ -13,7 +13,7 @@
 		        <span v-for="n in daysInMonth" :id="'date_'+n.date" v-on:click="newDate(n.date)" :class="{active: n.isActive}">{{n.date}}</span>
 		    </div>
 		</div>
-		<div class="page_container">
+		<div class="">
     		<div class="promo_container" v-if="filteredPromos.length > 0">
     			<div class="row promo_dets is-table-row" v-for="promo in filteredPromos">
     				<div class="col-sm-7" >
