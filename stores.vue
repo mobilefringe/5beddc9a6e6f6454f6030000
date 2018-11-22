@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <mapplic-map ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
+                            <mapplic-svg ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-svg>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
     </div>
 </template>
 <script>
-    define(["Vue", "vuex", "vue!mapplic-map", "vue-select"], function(Vue, Vuex, MapplicComponent, VueSelect) {
+    define(["Vue", "vuex", "vue!mapplic-svg", "vue-select"], function(Vue, Vuex, MapplicComponent, VueSelect) {
         Vue.component('v-select', VueSelect.VueSelect);
         return Vue.component("stores-component", {
             template: template, // the variable template will be injected
