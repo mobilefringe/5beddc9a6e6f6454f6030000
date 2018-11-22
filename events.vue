@@ -56,12 +56,6 @@
     .events_container .promo_dets:last-child {
         border-bottom: none;
     }
-    .events_container .row.is-table-row {
-        margin: 0;
-    }
-    .events_container .row.is-table-row [class*="col-"] {
-        padding:0;
-    }
     .events_container .feature_read_more {
         width : auto;
     }
