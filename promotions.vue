@@ -11,7 +11,7 @@
 		<div class="all_dates text-center">
 		    <div class="page_container">
 		    <span v-for="n in daysInMonth" :id="'date_'+n.date" v-on:click="newDate(n.date)" :class="{active: n.isActive}">{{n.date}}</span>
-		    </siv>
+		    </div>
 		</div>
 		<div class="page_container">
     		<div class="promo_container" v-if="filteredPromos.length > 0">
