@@ -54,7 +54,7 @@
     				</div>
     			</div>
     		</div>
-    		<div class="promo_container" v-else>
+    		<div class="promo_container page_container" v-else>
     		    <p style="padding:20px"> Sorry, No promotions or events available for this day. </p>
     		</div>
 		</div>
