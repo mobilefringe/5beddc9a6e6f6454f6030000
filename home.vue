@@ -73,7 +73,7 @@
         			</div>
         		</div>
         		<div style="border-top:4px double #aea99e">
-        			<div class="feature-div">
+        			<div class="feature-div clearfix">
         				<!--<span>-->
         					<div class="feature-box col-sm-4" v-for="item in feature_items">
         						<!--<p class="feature-title">{{item.name}}</p>-->
