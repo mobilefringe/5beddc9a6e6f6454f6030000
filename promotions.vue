@@ -15,40 +15,42 @@
 		</div>
 		<div class="">
     		<div class="promo_container" v-if="filteredPromos.length > 0">
-    			<div class="row promo_dets is-table-row" v-for="promo in filteredPromos">
-    				<div class="col-sm-7" >
-    					<div class="promo_div_image">
-    						<!--<img :src="promo.store.image_url"  :alt="promo.store.name"/>-->
-    						<img :src="promo.image_url"  :alt="promo.name"/>
-    					</div>
-    				</div>
-    				<div class="col-sm-5 promo_div_dets text-left">
-    					<p class="promo_div_name">{{promo.name}}</p>
-    					<p class="promo_div_store_name" v-if="promo.store"><router-link :to="'/stores/'+promo.store.slug">{{promo.store.name | uppercase}}</router-link></p>
-    					<p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-    					<p class="promo_div_description">{{promo.description_short}}</p>
-    					<div class="promo_feature_share row is-table-row">
-        					<span class="feature_read_more col-sm-8">
-        						<router-link :to="'/promotions_and_events/'+promo.slug" class="mobile_readmore" >
-        							<p class="feature-readmore  hvr-sweep-to-right" :aria="promo.name"><span v-if="promo.type == 'event'">View Event Details</span><span v-else>View Promotion Details</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
-        						</router-link>
-        					</span>
-        					<div class="text-right  col-sm-4" v-if="promo">
-            					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="_.truncate(promo.description, {'length': 99})" twitter-user="" :media="promo.image_url" inline-template >
-                                    <div class="blog-social-share">
-                                        <div class="social_share">
-                                            <network network="facebook">
-                                                <i class="fa fa-facebook"></i>
-                                            </network>
-                                            <network network="twitter">
-                                                <i class="fa fa-twitter"></i>
-                                            </network>
-                                        </div>
-                                    </div>
-                                </social-sharing>
+    		    <div v-for="promo in filteredPromos">
+        			<div class="row promo_dets is-table-row" >
+        				<div class="col-sm-7" >
+        					<div class="promo_div_image">
+        						<!--<img :src="promo.store.image_url"  :alt="promo.store.name"/>-->
+        						<img :src="promo.image_url"  :alt="promo.name"/>
         					</div>
-        					
-    					</div>
+        				</div>
+        				<div class="col-sm-5 promo_div_dets text-left">
+        					<p class="promo_div_name">{{promo.name}}</p>
+        					<p class="promo_div_store_name" v-if="promo.store"><router-link :to="'/stores/'+promo.store.slug">{{promo.store.name | uppercase}}</router-link></p>
+        					<p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+        					<p class="promo_div_description">{{promo.description_short}}</p>
+        					<div class="promo_feature_share row is-table-row">
+            					<span class="feature_read_more col-sm-8">
+            						<router-link :to="'/promotions_and_events/'+promo.slug" class="mobile_readmore" >
+            							<p class="feature-readmore  hvr-sweep-to-right" :aria="promo.name"><span v-if="promo.type == 'event'">View Event Details</span><span v-else>View Promotion Details</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+            						</router-link>
+            					</span>
+            					<div class="text-right  col-sm-4" v-if="promo">
+                					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="_.truncate(promo.description, {'length': 99})" twitter-user="" :media="promo.image_url" inline-template >
+                                        <div class="blog-social-share">
+                                            <div class="social_share">
+                                                <network network="facebook">
+                                                    <i class="fa fa-facebook"></i>
+                                                </network>
+                                                <network network="twitter">
+                                                    <i class="fa fa-twitter"></i>
+                                                </network>
+                                            </div>
+                                        </div>
+                                    </social-sharing>
+            					</div>
+            					
+        					</div>
+        				</div>
     				</div>
     			</div>
     		</div>
