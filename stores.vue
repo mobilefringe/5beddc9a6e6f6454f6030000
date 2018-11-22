@@ -1,6 +1,5 @@
 <template>
     <div> <!-- without an outer container div this component template will not render -->
-        <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
                 <!--<div class="inside_header_background" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
