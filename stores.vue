@@ -11,8 +11,8 @@
                 <!--    </div>-->
                 <!--</div>-->
                 <div class="page_container margin_30">
-                    <div class="details_row">
-                        <div class="details_col_3">
+                    <div class="row">
+                        <div class="col_3">
                             <div class="hidden_phone">
                                 <h3 class="inside_page_title">Find Store</h3>
                                 <div class="store_list_container hidden-mobile" v-if="allStores">
@@ -29,7 +29,7 @@
                                 ></v-select>
                             </div>
                         </div>
-                        <div class="details_col_9">
+                        <div class="col-md-9">
                             <mapplic-map ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
                         </div>
                     </div>
