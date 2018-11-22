@@ -10,7 +10,7 @@
 		</div>
 		<div class="all_dates text-center">
 		    <div class="page_container">
-		    <span v-for="n in daysInMonth" :id="'date_'+n.date" v-on:click="newDate(n.date)" :class="{active: n.isActive}">{{n.date}}</span>
+		        <span v-for="n in daysInMonth" :id="'date_'+n.date" v-on:click="newDate(n.date)" :class="{active: n.isActive}">{{n.date}}</span>
 		    </div>
 		</div>
 		<div class="page_container">
@@ -97,6 +97,9 @@
     }
     .promo_dets {
         border-bottom: 1px solid #aea99e;
+    }
+    .promo_dets:last-child {
+        border-bottom: none;
     }
     .row.is-table-row {
         margin: 0;
