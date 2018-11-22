@@ -58,7 +58,7 @@
         				<div  class="prev"></div>
         				<slick ref="slick" :options="slickOptions">
         					<div class="" v-for="banner in banners" v-if="banners">
-        						<img :src="banner.image_url" class="" :alt="banner.name">
+        						<img :src="banner.image_url" class="hvr-grow-shadow" :alt="banner.name">
         					</div>
         				</slick>
         				<div class="next"></div>
