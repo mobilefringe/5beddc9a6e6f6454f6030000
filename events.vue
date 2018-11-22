@@ -1,7 +1,8 @@
 <template>
 	<div class="page_container events_container" v-if="dataLoaded"><!-- for some reason if you do not put an outer container div this component template will not render -->
 		<div class="promo_container" v-if="events.length > 0">
-			<div class="row promo_dets is-table-row" v-for="promo in events">
+		    <div class=" promo_dets" v-for="promo in events">
+        			<div class="row page_container">
 				<div class="col-sm-7" >
 					<div class="promo_div_image" v-lazy-container="{ selector: 'img' }">
 						<img :data-src="promo.image_url"  data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
@@ -31,7 +32,7 @@
                             </div>
                         </social-sharing>
     					</div>
-    					
+    					</div>
 					</div>
 				</div>
 			</div>
