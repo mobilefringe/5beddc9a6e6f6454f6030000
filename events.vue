@@ -74,6 +74,9 @@
     .events_container .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
         background-color: #D3D3D3;
     }
+    {
+        border-bottom: 1px solid #aea99e;
+    }
     .events_container .all_dates span.active { 
         background-color: #bababa;
     }
