@@ -10,7 +10,7 @@
                 <!--        </div>-->
                 <!--    </div>-->
                 <!--</div>-->
-                <div class="main_container margin_30">
+                <div class="page_container margin_30">
                     <div class="details_row">
                         <div class="details_col_3">
                             <div class="hidden_phone">
