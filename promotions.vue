@@ -16,7 +16,7 @@
 		<div class="">
     		<div class="promo_container" v-if="filteredPromos.length > 0">
     		    <div class=" promo_dets" v-for="promo in filteredPromos">
-        			<div class="row is-table-row page_container">
+        			<div class="row page_container">
         				<div class="col-sm-7" >
         					<div class="promo_div_image">
         						<!--<img :src="promo.store.image_url"  :alt="promo.store.name"/>-->
