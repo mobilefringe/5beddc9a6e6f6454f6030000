@@ -55,7 +55,7 @@
     .events_container .date_bar .fa{
         cursor: pointer;
     }
-    {
+    .events_container .promo_container{
         border-top: 1px solid #aea99e;
     }
     .events_container .all_dates span.active { 
