@@ -1,6 +1,6 @@
 <template>
     <div class="hours_page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <img style= "width: 100%;" src="http://via.placeholder.com/760x550" alt="plaza" class="show_phone">  
+        <img style= "width: 100%;" src="https://via.placeholder.com/760x550" alt="plaza" class="show_phone">  
         <div class="page_container">
             <div class="all_hours_container">
                 <div class="row">
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-7 hidden_phone">
-                        <img src="//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1529955915578/hours_page.png" alt=""/>
+                        <img src="https://via.placeholder.com/760x550" alt=""/>
                     </div> 
                 </div>
                 <div class="row">
