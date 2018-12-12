@@ -122,6 +122,17 @@
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
                     // this.$router.replace({ path: '/'});
                 });
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                    
+                    var temp_repo = this.findRepoByName('Contact Side Image');
+                    if(temp_repo) {
+                        this.hoursSideImage = temp_repo.images[0];
+                    } else {
+                        this.hoursSideImage = {};
+                        this.hoursSideImage.image_url = "";
+                    }
+                });
             },
             mounted () {
                 //creating random validation num 
