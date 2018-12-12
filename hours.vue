@@ -60,7 +60,8 @@
                     'property',
                     'timezone',
                     'getPropertyHours',
-                    'getPropertyHolidayHours'
+                    'getPropertyHolidayHours',
+                    'findRepoByName'
                 ]),
                 hours () {
                     return this.getPropertyHours;
