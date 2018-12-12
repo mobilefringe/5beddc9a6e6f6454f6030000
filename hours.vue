@@ -77,6 +77,15 @@
                     var holidayHours = this.holidayHours;
                     return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 }
+            },
+            methods: {
+                loadData: async function() {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch("getData", "promotions"), this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
             }
         });
     });
