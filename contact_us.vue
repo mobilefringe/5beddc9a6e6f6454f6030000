@@ -114,9 +114,7 @@
             },
             created(){
                 host_name = this.property.mm_host.replace("http:", "");
-                this.$store.dispatch('LOAD_PAGE_DATA', {
-                    url: host_name + "/pages/rollinghills-contact-us.json"
-                }).then(response => {
+                ).then(response => {
                     this.currentPage = response.data;
                 }, error => {
                     console.error("Could not retrieve data from server. Please check internet connection and try again.");
@@ -179,6 +177,15 @@
                         }
                     
                     })
+                },
+                loadData: async function() {
+                    try {
+                        let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {
+                    url: host_name + "/pages/rollinghills-contact-us.json"
+                }, this.$store.dispatch("getData", "repos")]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
                 },
             }
         });
