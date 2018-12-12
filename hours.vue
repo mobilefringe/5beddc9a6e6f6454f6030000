@@ -55,6 +55,25 @@
         Vue.use(Meta);
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
+            data: function() {
+                return {
+                    hoursSideImage:null
+                }
+            },
+            created() {
+                this.loadData().then(response => {
+                    this.dataloaded = true;
+                    
+                    var temp_repo = this.findRepoByName('Promotions Banner');
+                    if(temp_repo) {
+                        this.pageBanner = temp_repo.images[0];
+                    } else {
+                        this.pageBanner = {};
+                        this.pageBanner.image_url = "";
+                    }
+                    this.promos = this.promotions;
+                });
+            },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
