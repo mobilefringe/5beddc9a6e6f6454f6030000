@@ -4,7 +4,7 @@
 			<div class="row promo_dets is-table-row" v-for="promo in jobs">
 				<div class="col-sm-7" >
 					<div class="promo_div_image"  v-lazy-container="{ selector: 'img' }">
-						<img :data-src="promo.store.store_front_url_abs" data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
+						<img :data-src="promo.image_url" data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
 					</div>
 				</div>
 				<div class="col-sm-5 promo_div_dets text-left">
@@ -95,13 +95,14 @@
                         job.description_short = _.truncate(job.description, {
                             'length': 70
                         });
-                        if (job.store != null && job.store != undefined && _.includes(job.store.store_front_url_abs, 'missing')) {
-                            job.store.store_front_url_abs = vm.property.default_logo_url;
-                        }
-                        if (job.store == null || job.store == undefined) {
-                            job.store = {};
-                            job.store.store_front_url_abs = vm.property.default_logo_url;
-                        }
+                        // if (job.store != null && job.store != undefined && _.includes(job.store.store_front_url_abs, 'missing')) {
+                        //     job.store.store_front_url_abs = vm.property.default_logo_url;
+                        // }
+                        // if (job.store == null || job.store == undefined) {
+                        //     job.store = {};
+                        //     job.store.store_front_url_abs = vm.property.default_logo_url;
+                        // }
+                        job.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544196729000/JobsImage-PlaceHolder-1.jpg"
                     });
                     _.sortBy(this.processedJobs, [function(o) {
                         return o.start_date;
