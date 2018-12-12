@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 col-sm-7 hidden_phone">
-                        <img src="https://via.placeholder.com/760x550" alt=""/>
+                        <img :src="hoursSideImage.image_url" alt=""/>
                     </div> 
                 </div>
                 <div class="row">
