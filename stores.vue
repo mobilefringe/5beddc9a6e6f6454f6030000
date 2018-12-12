@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <mapplic-map ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
+                            <mapplic-map ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details" svgHeight="2500" svgWidth="2500"></mapplic-map>
                         </div>
                     </div>
                 </div>
