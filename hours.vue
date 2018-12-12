@@ -66,10 +66,10 @@
                     
                     var temp_repo = this.findRepoByName('Promotions Banner');
                     if(temp_repo) {
-                        this.pageBanner = temp_repo.images[0];
+                        this.hoursSideImage = temp_repo.images[0];
                     } else {
-                        this.pageBanner = {};
-                        this.pageBanner.image_url = "";
+                        this.hoursSideImage = {};
+                        this.hoursSideImage.image_url = "";
                     }
                     this.promos = this.promotions;
                 });
