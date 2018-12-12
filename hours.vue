@@ -71,7 +71,6 @@
                         this.hoursSideImage = {};
                         this.hoursSideImage.image_url = "";
                     }
-                    this.promos = this.promotions;
                 });
             },
             computed: {
