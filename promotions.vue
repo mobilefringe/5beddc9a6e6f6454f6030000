@@ -188,15 +188,15 @@
                             // }
                             
                             if (_.includes(value.image_url, 'missing')) {
-                                if (value.store != null && value.store != undefined) {
-                                    if(_.includes(value.store.store_front_url_abs, 'missing')) {
-                                        value.image_url = vm.property.default_logo_url;    
-                                    } else {
-                                        value.image_url = value.store.store_front_url_abs;
-                                    }
-                                } else {
-                                    value.image_url = vm.property.default_logo_url; 
-                                }
+                                // if (value.store != null && value.store != undefined) {
+                                //     if(_.includes(value.store.store_front_url_abs, 'missing')) {
+                                //         value.image_url = vm.property.default_logo_url;    
+                                //     } else {
+                                //         value.image_url = value.store.store_front_url_abs;
+                                //     }
+                                // } else {
+                                    value.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544196729000/PromoImage-PlaceHolder-1.jpg"; 
+                                // }
                             } else {
                                 value.image_url = value.image_url;
                             }
