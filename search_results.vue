@@ -31,7 +31,7 @@
                                     </div>
                                 </div>
                                 <div v-else class="col-sm-3 store_details_image center-block">
-                                    <img class="result_logo" :src="siteInfo.default_logo_url"/>    
+                                    <img class="result_logo" :src="property.default_logo_url"/>    
                                 </div>
                                 <div class="col-sm-9 search_result_content">
                                     <h3>{{result.name}}</h3>
@@ -70,7 +70,6 @@
                     searchResults: null,
                     searchQuery: null,
                     dataLoaded: true,
-                    siteInfo: site
                 }
             },
             beforeRouteUpdate(to, from, next) {
