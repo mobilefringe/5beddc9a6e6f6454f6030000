@@ -130,17 +130,22 @@
             watch: {
                 currentPromo : function (){
                     if(this.currentPromo != null) {
-                        if (this.currentPromo.store != null && this.currentPromo.store != undefined && _.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
-                            this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
-                        }
-                        else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
-                            this.currentPromo.store = {};
-                            this.currentPromo.store.store_front_url_abs =  this.property.default_logo_url;
-                        }
-                        if(this.currentPromo.type == "event"){
-                             this.currentPromo.store = {};
-                            this.currentPromo.store.store_front_url_abs =  this.property.default_logo_url;
-                        }
+                        // if (this.currentPromo.store != null && this.currentPromo.store != undefined && _.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
+                        //     this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
+                        // }
+                        // else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
+                        //     this.currentPromo.store = {};
+                        //     this.currentPromo.store.store_front_url_abs =  this.property.default_logo_url;
+                        // }
+                        // if(this.currentPromo.type == "event"){
+                        //      this.currentPromo.store = {};
+                        //     this.currentPromo.store.store_front_url_abs =  this.property.default_logo_url;
+                        // }
+                        if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                      this.currentStore.no_store_logo = true
+                    } else {
+                      this.currentStore.no_store_logo = false
+                    }
                         var vm = this;
                         var temp_promo = [];
                         var current_id =_.toNumber(this.currentPromo.id);
