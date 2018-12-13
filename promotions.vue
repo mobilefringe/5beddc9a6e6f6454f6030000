@@ -114,8 +114,10 @@
     .feature_read_more {
         width : auto;
     }
+    @media (max-width: 768px) { 
     .promo_container .promo_feature_share {
         display: block;
+    }
     }
 </style>
 
