@@ -118,11 +118,11 @@
         .promo_container .promo_feature_share {
             display: block;
         }
-        .row.is-table-row [class*="col-"] {
+        .promo_container .row.is-table-row [class*="col-"] {
             float: left;
             display: block;
         }
-        .row.is-table-row .col-sm-4.col-xs-12{
+        .promo_container .row.is-table-row .col-sm-4.col-xs-12{
             text-align: left!important;
         }
     }
