@@ -16,11 +16,12 @@
               src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
               alt
             >
-            <div class="no_logo_text">
-              <div class="store_text">
-                <h2>{{ currentStore.name }}</h2>
-              </div>
-            </div>
+            <h1 class="no_logo_text">
+            {{ currentStore.name }}
+              <!--<div class="store_text">-->
+              <!--  <h2></h2>-->
+              <!--</div>-->
+            </h1>
           </div>
 				</div>
 			</div>
@@ -155,9 +156,6 @@
             watch: {
                 currentStore: function() {
                     this.currentStore.zoom = 2;
-                    if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                        this.currentStore.store_front_url_abs = this.property.default_logo_url;
-                    }
                     if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
                           this.currentStore.no_store_logo = true
                         } else {
