@@ -102,7 +102,7 @@
                         //     job.store = {};
                         //     job.store.store_front_url_abs = vm.property.default_logo_url;
                         // }
-                        job.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544196729000/JobsImage-PlaceHolder-1.jpg"
+                        job.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544725620000/EventsImage-PlaceHolder-1.jpg"
                     });
                     _.sortBy(this.processedJobs, [function(o) {
                         return o.start_date;
