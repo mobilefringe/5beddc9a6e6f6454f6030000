@@ -84,46 +84,7 @@
 	</div>
 </template>
 <style>
-    .store_logo_container,
-    .store_map_container,
-    .store_details_container,
-    .store_desc_container{
-        padding: 20px 10px;
-    }
-    .store_logo_container div {
-        width:300px;
-        height:300px;
-        position: relative;
-    }
-    .store_logo_container img{
-        border: 1px solid #aea99e;
-        /*width:300px;*/
-        /*height:300px*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
     
-    .promo_container_title{
-        border-top:1px solid #aea99e;
-        border-bottom:1px solid #aea99e;
-        height: 35px;
-        line-height: 35px;
-    }
-	.store_map_container .mapplic-popup-link {
-	    display:none!important;
-	}
-	.store_map_container .mapplic-popup-link, .mapplic-tooltip-close {
-	    display:none!important;
-	}
-	.store_map_container .mapplic-tooltip-content {
-	    margin-right: auto;
-	}
-	.store_map_container .mapplic-tooltip-title {
-        text-align: center;
-        margin: auto!important;
-	}
 </style>
 <script>
     define(['Vue', 'vuex', 'moment', "vue!mapplic-svg"], function(Vue, Vuex, moment, MapplicComponent) {
