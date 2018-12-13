@@ -100,16 +100,16 @@
         height: 300px;
         overflow:hidden;
     }
-	#store_dets_container .mapplic-popup-link {
+	.store_map_container .mapplic-popup-link {
 	    display:none!important;
 	}
-	#store_dets_container .mapplic-popup-link, .mapplic-tooltip-close {
+	.store_map_container .mapplic-popup-link, .mapplic-tooltip-close {
 	    display:none!important;
 	}
-	#store_dets_container .mapplic-tooltip-content {
+	.store_map_container .mapplic-tooltip-content {
 	    margin-right: auto;
 	}
-	#store_dets_container .mapplic-tooltip-title {
+	.store_map_container .mapplic-tooltip-title {
         text-align: center;
         margin: auto!important;
 	}
