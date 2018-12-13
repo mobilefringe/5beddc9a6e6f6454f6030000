@@ -128,6 +128,20 @@ define([], function() {
             }]
         },
         {
+            path: '/search-results',
+            component: view('default'),
+            children: [
+                {
+                    path: '',
+                    component: view('search_results'),
+                    meta: {
+                        pageName: 'Search Results',
+                    },
+                    name: 'search-results'
+                }
+            ]
+        },
+        {
             path: '/404',
             name: '404',
             component: view('notfoundcomponent')
