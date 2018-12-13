@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         
-                        <div class="padding_top_20"></div>
+                        <div class="padding_tb_30"></div>
                         
                         <h2 class="hours_heading text-left">Holiday Closures</h2>
                         <div id="closed_hours_container" class="hours_container">
