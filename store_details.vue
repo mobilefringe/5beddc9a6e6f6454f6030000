@@ -158,6 +158,11 @@
                     if ( _.includes(this.currentStore.store_front_url_abs, 'missing')) {
                         this.currentStore.store_front_url_abs = this.property.default_logo_url;
                     }
+                    if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
+                          this.currentStore.no_store_logo = true
+                        } else {
+                          this.currentStore.no_store_logo = false
+                        }
                     
                     var vm = this;
                     if (this.currentStore.store_hours) {
