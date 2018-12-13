@@ -79,7 +79,6 @@
     }
     .all_dates {
         border-bottom: 1px solid #aea99e;
-        
     }
     .all_dates_child{
         display: flex;
