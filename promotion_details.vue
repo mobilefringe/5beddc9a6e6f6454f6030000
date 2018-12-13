@@ -141,10 +141,10 @@
                         //      this.currentPromo.store = {};
                         //     this.currentPromo.store.store_front_url_abs =  this.property.default_logo_url;
                         // }
-                        if (_.includes(this.currentStore.store_front_url_abs, 'missing')) {
-                          this.currentStore.no_store_logo = true
+                        if (_.includes(currentPromo.store.store_front_url_abs, 'missing')) {
+                          this.currentPromo.store.no_store_logo = true
                         } else {
-                          this.currentStore.no_store_logo = false
+                          this.currentPromo.store.no_store_logo = false
                         }
                         var vm = this;
                         var temp_promo = [];
