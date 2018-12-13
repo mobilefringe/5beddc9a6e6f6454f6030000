@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-4 event_logo_container">
 				<div >
-					<img :src="currentPromo.store.store_front_url_abs" :alt="currentPromo.store.name" class="hidden_phone"/>
+					<!--<img :src="currentPromo.store.store_front_url_abs" :alt="currentPromo.store.name" class="hidden_phone"/>-->
 					<img
                     v-if="!currentPromo.store.no_store_logo"
                     class="store_img hidden_phone"
@@ -17,7 +17,7 @@
                       alt
                     >
                         <h1 class="no_logo_text">
-                        {{ currentStore.name }}
+                        {{ currentPromo.store.name }}
                           <!--<div class="store_text">-->
                           <!--  <h2></h2>-->
                           <!--</div>-->
