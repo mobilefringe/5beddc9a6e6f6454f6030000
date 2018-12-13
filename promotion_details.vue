@@ -136,13 +136,14 @@
                          if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
                             this.currentPromo.store = {};
                             this.currentPromo.store.name =  this.property.name;
+                            this.currentPromo.store.no_store_logo = true
                         }
                         else {
                             if (_.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
-                          this.currentPromo.store.no_store_logo = true
-                        } else {
-                          this.currentPromo.store.no_store_logo = false
-                        }
+                              this.currentPromo.store.no_store_logo = true
+                            } else {
+                              this.currentPromo.store.no_store_logo = false
+                            }
                         }
                         
                         // if(this.currentPromo.type == "event"){
