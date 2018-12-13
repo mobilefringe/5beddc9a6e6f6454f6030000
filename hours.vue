@@ -19,7 +19,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 ">
-                        <div class="padding_top_20"></div>
+                        <div class="padding_tb_30"></div>
                         
                         <h2 class="hours_heading text-left">Extended Holiday Hours</h2>
                         <div id="holidays_hours_container" class="hours_container">
