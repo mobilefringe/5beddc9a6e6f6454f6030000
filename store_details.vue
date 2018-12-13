@@ -194,6 +194,7 @@
                     'findRepoByName'
                 ]),
                 getSVGurl() {
+                    console.log("this.property.svgmap_url", this.property.svgmap_url)
                     return "https://www.mallmaverick.com" + this.property.svgmap_url;
                 },
                 svgMapRef() {
