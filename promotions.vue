@@ -115,7 +115,7 @@
         width : auto;
     }
     .promo_container .promo_feature_share {
-        
+        display: block;
     }
 </style>
 
