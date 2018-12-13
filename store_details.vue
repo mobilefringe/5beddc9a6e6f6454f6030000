@@ -83,9 +83,7 @@
 		</div>
 	</div>
 </template>
-<style>
-    
-</style>
+
 <script>
     define(['Vue', 'vuex', 'moment', "vue!mapplic-svg"], function(Vue, Vuex, moment, MapplicComponent) {
         return Vue.component("store-details-component", {
