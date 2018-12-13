@@ -3,7 +3,25 @@
 		<div class="row">
 			<div class="col-sm-4 store_logo_container">
 				<div>
-					<img :src="currentStore.store_front_url_abs" :alt="currentStore.name"/>
+					<!--<img :src="currentStore.store_front_url_abs" :alt="currentStore.name"/>-->
+					<img
+            v-if="!currentStore.no_store_logo"
+            class="store_img"
+            :src="currentStore.store_front_url_abs"
+            alt
+          >
+          <div v-else class="no_logo_container">
+            <img
+              class="store_img"
+              src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
+              alt
+            >
+            <div class="no_logo_text">
+              <div class="store_text">
+                <h2>{{ currentStore.name }}</h2>
+              </div>
+            </div>
+          </div>
 				</div>
 			</div>
 			<div class="col-sm-8 store_map_container">
