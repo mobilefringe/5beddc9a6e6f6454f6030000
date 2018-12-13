@@ -5,9 +5,9 @@
 				<div >
 					<img :src="currentPromo.store.store_front_url_abs" :alt="currentPromo.store.name" class="hidden_phone"/>
 					<img
-                    v-if="!currentStore.no_store_logo"
+                    v-if="!currentPromo.store.no_store_logo"
                     class="store_img hidden_phone"
-                    :src="currentStore.store_front_url_abs"
+                    :src="currentPromo.store.store_front_url_abs"
                     alt
                   >
                   <div v-else class="no_logo_container hidden_phone">
