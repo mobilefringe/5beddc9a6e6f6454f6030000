@@ -94,7 +94,6 @@
         width:300px;
         height:300px;
         position: relative;
-        border: 1px solid #aea99e;
     }
     .store_logo_container img{
         /*border: 1px solid #aea99e;*/
