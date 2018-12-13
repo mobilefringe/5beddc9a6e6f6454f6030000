@@ -141,7 +141,7 @@
                         //      this.currentPromo.store = {};
                         //     this.currentPromo.store.store_front_url_abs =  this.property.default_logo_url;
                         // }
-                        if (_.includes(currentPromo.store.store_front_url_abs, 'missing')) {
+                        if (_.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
                           this.currentPromo.store.no_store_logo = true
                         } else {
                           this.currentPromo.store.no_store_logo = false
