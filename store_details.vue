@@ -213,14 +213,14 @@
                 },
                 allStores() {
                     this.processedStores.map(function(store){
-                        if (_.includes(value.store_front_url_abs, 'missing')) {
-          value.no_store_logo = true
-        } else {
-          value.no_store_logo = false
-        }
-        if (!value.svgmap_region) {
-          value.svgmap_region = value.id
-        }
+                        if (_.includes(store.store_front_url_abs, 'missing')) {
+                          store.no_store_logo = true
+                        } else {
+                          store.no_store_logo = false
+                        }
+                        if (!store.svgmap_region) {
+                          store.svgmap_region = store.id
+                        }
                         store.zoom = 4;
                     })
                     return this.processedStores;
