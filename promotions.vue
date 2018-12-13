@@ -118,6 +118,10 @@
         .promo_container .promo_feature_share {
             display: block;
         }
+        .row.is-table-row [class*="col-"] {
+            float: left;
+            display: block;
+        }
     }
 </style>
 
