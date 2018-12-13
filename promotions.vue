@@ -122,6 +122,9 @@
             float: left;
             display: block;
         }
+        .row.is-table-row .col-sm-4.col-xs-12{
+            text-align: left!important;
+        }
     }
 </style>
 
