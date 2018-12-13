@@ -23,7 +23,7 @@
                           <!--</div>-->
                         </h1>
                     </div>
-					<img  :src="currentPromo.image_url" :alt="currentPromo.name" class="promo_image show_phone"/>
+					<!--<img  :src="currentPromo.image_url" :alt="currentPromo.name" class="promo_image show_phone"/>-->
 				</div>
 				<div style="margin-left:0; margin-top: 25px;">
 					<h1>{{currentPromo.name}}</h1>
