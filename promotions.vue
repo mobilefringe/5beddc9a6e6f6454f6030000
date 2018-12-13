@@ -30,7 +30,7 @@
         					<p class="promo_div_description">{{promo.description_short}}</p>
         					<div class="promo_feature_share row is-table-row">
             					<span class="feature_read_more col-sm-8">
-            						<router-link :to="'/promotions_and_events/'+promo.slug" class="mobile_readmore" >
+            						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
             							<p class="feature-readmore  hvr-sweep-to-right" :aria="promo.name"><span v-if="promo.type == 'event'">View Event Details</span><span v-else>View Promotion Details</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
             						</router-link>
             					</span>
