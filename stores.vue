@@ -2,13 +2,6 @@
     <div>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <!--<div class="inside_header_background" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
-                <!--    <div class="main_container">-->
-                <!--        <div class="page_container">-->
-                <!--            <h2>Centre Map</h2>-->
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
                 <div class="page_container margin_30">
                     <div class="row">
                         <div class="col-md-3">
