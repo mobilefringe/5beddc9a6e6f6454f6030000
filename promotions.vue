@@ -208,7 +208,7 @@
                                 //         value.image_url = value.store.store_front_url_abs;
                                 //     }
                                 // } else {
-                                    value.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544196729000/PromoImage-PlaceHolder-1.jpg"; 
+                                    value.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544725620000/EventsImage-PlaceHolder-2.jpg"; 
                                 // }
                             } else {
                                 value.image_url = value.image_url;
