@@ -29,12 +29,12 @@
         					<p class="promo_div_date">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
         					<p class="promo_div_description">{{promo.description_short}}</p>
         					<div class="promo_feature_share row is-table-row">
-            					<span class="feature_read_more col-sm-8">
+            					<span class="feature_read_more col-sm-8 col-xs-12">
             						<router-link :to="'/promotions/'+promo.slug" class="mobile_readmore" >
             							<p class="feature-readmore  hvr-sweep-to-right" :aria="promo.name"><span v-if="promo.type == 'event'">View Event Details</span><span v-else>View Promotion Details</span> <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
             						</router-link>
             					</span>
-            					<div class="text-right  col-sm-4" v-if="promo">
+            					<div class="text-right  col-sm-4 col-xs-12" v-if="promo">
                 					<social-sharing :url="shareURL(promo.slug)" :title="promo.title" :description="promo.body" :quote="_.truncate(promo.description, {'length': 99})" twitter-user="" :media="promo.image_url" inline-template >
                                         <div class="blog-social-share">
                                             <div class="social_share">
@@ -115,9 +115,9 @@
         width : auto;
     }
     @media (max-width: 768px) { 
-    .promo_container .promo_feature_share {
-        display: block;
-    }
+        .promo_container .promo_feature_share {
+            display: block;
+        }
     }
 </style>
 
