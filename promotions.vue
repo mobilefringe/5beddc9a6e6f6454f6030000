@@ -114,7 +114,9 @@
     .feature_read_more {
         width : auto;
     }
-    
+    .promo_container .promo_feature_share {
+        
+    }
 </style>
 
 <script>
