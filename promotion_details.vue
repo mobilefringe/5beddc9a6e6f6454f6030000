@@ -10,7 +10,7 @@
                     :src="currentStore.store_front_url_abs"
                     alt
                   >
-                  <div v-else class="no_logo_container" class="hidden_phone">
+                  <div v-else class="no_logo_container hidden_phone">
                     <img
                       class="store_img "
                       src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
