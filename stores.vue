@@ -11,7 +11,7 @@
                                     <p class="store_name" v-for="store in allStores" v-on:click="dropPin(store)">{{store.name}}</p>
                                 </div>
                             </div>
-                            <div class="show_phone">
+                            <div class="show_phone mobile_store_select">
                                 <v-select 
                                     :options="allStores" 
                                     :placeholder="'Select A Store'" 
