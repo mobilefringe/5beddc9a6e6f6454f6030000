@@ -1,5 +1,5 @@
 <template>
-	<div class="events_container" v-if="dataLoaded"><!-- for some reason if you do not put an outer container div this component template will not render -->
+	<div class="events_container" v-if="dataLoaded"><!-- template will not render without an outer container -->
 	    <div class="inside_page_banner margin_30" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
 		<div class="promo_container" v-if="dineList.length > 0">
 		    <div class=" promo_dets" v-for="item in dineList">
