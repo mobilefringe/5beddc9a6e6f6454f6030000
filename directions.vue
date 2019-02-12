@@ -1,5 +1,5 @@
 <template>
-    <div class="hours_page_container"> <!-- template will not render without an outer container -->
+    <div> <!-- template will not render without an outer container -->
         <div v-if="hoursImage" class="inside_page_banner" :style="{ backgroundImage: 'url(' + hoursImage.image_url + ')' }"></div>
         <div class="page_container">
             <div class="row">
