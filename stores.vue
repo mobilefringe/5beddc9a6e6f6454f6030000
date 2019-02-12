@@ -65,6 +65,8 @@
                     "property",
                     "timezone",
                     "findRepoByName",
+                    "categories",
+                    "processedCategories",
                     "processedStores",
                 ]),
                 allCategories() {
