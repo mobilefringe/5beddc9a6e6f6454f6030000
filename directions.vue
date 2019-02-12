@@ -13,15 +13,12 @@
     </div>
 </template>
 <style>
-    .hours_page_container .row{
-        margin-left:inherit;
-    }
     .footer-div {
         margin-top: 0;
     }
 </style>
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
+    define(["Vue", "vuex"], function(Vue, Vuex) {
         return Vue.component("hours-component", {
             template: template, // the variable template will be injected
             data: function() {
@@ -40,35 +37,23 @@
                         this.hoursImage = {};
                         this.hoursImage.image_url = "";
                     }
+                    
+                    this.currentPage = response[1].data;
                 });
             },
             computed: {
                 ...Vuex.mapGetters([
                     'property',
-                    'timezone',
-                    'getPropertyHours',
-                    'getPropertyHolidayHours',
                     'findRepoByName'
-                ]),
-                hours () {
-                    return this.getPropertyHours;
-                },
-                holidayHours () {
-                    return this.getPropertyHolidayHours;
-                },
-                reducedHolidays () {
-                    var holidayHours = this.holidayHours;
-                    return _.filter(holidayHours, function(o) { return !o.is_closed; });
-                },
-                closeHolidays () {
-                    var holidayHours = this.holidayHours;
-                    return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
-                }
+                ])
             },
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([ this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([ 
+                            this.$store.dispatch("getData", "repos"),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: host_name + "/pages/rollinghills-directions.json" }), 
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
