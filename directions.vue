@@ -37,7 +37,7 @@
                         this.hoursImage.image_url = "";
                     }
 
-                    this.currentPage = response[1].data;
+                    this.currentPage = response[0].data;
                     
                     this.dataloaded = true;
                 });
