@@ -37,6 +37,8 @@
                         this.hoursImage.image_url = "";
                     }
                     console.log("response", response)
+                    var current_page = response[1].data;
+                    console.log("current_page", current_page)
                     this.currentPage = response[1].data;
                     
                     this.dataloaded = true;
