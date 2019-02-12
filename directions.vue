@@ -1,6 +1,6 @@
 <template>
     <div> <!-- template will not render without an outer container -->
-        <div v-if="hoursImage" class="inside_page_banner" :style="{ backgroundImage: 'url(' + hoursImage.image_url + ')' }"></div>
+        <div v-if="hoursImage margin_30" class="inside_page_banner" :style="{ backgroundImage: 'url(' + hoursImage.image_url + ')' }"></div>
         <div class="page_container">
             <div class="row">
                 <div class="col-md-12">
