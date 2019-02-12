@@ -6,7 +6,8 @@
 			<div class="row page_container">
 				<div class="col-sm-7" >
 					<!--<div class="promo_div_image" v-lazy-container="{ selector: 'img' }">-->
-					<!--	<img :data-src="item.image_url"  data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>-->
+						<!--<img :data-src="item.image_url"  data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>-->
+						<img :src="item.image_url" :alt="item.name"/>
 					<!--</div>-->
 				</div>
 				<div class="col-sm-5 promo_div_dets text-left">
