@@ -29,11 +29,8 @@
             },
             created() {
                 this.loadData().then(response => {
-                    console.log("res", this.response)
-                    
-                    
                     var temp_repo = this.findRepoByName('Hours Image');
-                    if(temp_repo) {
+                    if (temp_repo) {
                         this.hoursImage = temp_repo.images[0];
                     } else {
                         this.hoursImage = {};
