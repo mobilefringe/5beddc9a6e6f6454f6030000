@@ -14,23 +14,20 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h2 class="hours_heading text-left">Extended Holiday Hours</h2>
+                        <h2 class="hours_heading text-left">Holiday Hours</h2>
                         <div id="holidays_hours_container" class="hours_container">
                             <div class="hours_div text-left"  v-for="hour in reducedHolidays">
                                 <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
                                 <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
                             </div>
                         </div>
-                        
-                        <!--<div class="padding_tb_30"></div>-->
-                        
+                        <div class="margin_20"></div>
                         <h2 class="hours_heading text-left">Holiday Closures</h2>
                         <div id="closed_hours_container" class="hours_container">
                             <div class="hours_div text-left" v-for="hour in closeHolidays">
                                 <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
                             </div>
                         </div>
-                        
                     </div>
                     <!--<div class="col-md-7 col-sm-7 hidden_phone">-->
                     <!--    <img :src="hoursSideImage.image_url" alt=""/>-->
