@@ -10,7 +10,7 @@
 					</div>
 				</div>
 				<div class="col-sm-5 promo_div_dets text-left">
-					<p class="promo_div_name">{{promo.name}}</p>
+					<p class="promo_div_name">{{ item.name }}</p>
 					<p class="promo_div_date">{{item.start_date | moment("MMM D", timezone)}} - {{item.end_date | moment("MMM D", timezone)}}</p>
 					<p class="promo_div_description">{{item.description_short}}</p>
 					<div class="promo_feature_share row is-table-row">
