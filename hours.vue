@@ -1,6 +1,7 @@
 <template>
     <div class="hours_page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <img style= "width: 100%;" :src="hoursSideImage.image_url" alt="" class="show_phone">  
+        <!--<img style= "width: 100%;" :src="hoursImage.image_url" alt="" class="show_phone">  -->
+        <div class="inside_page_banner" :style="{ backgroundImage: 'url(' + hoursImage.image_url + ')' }"></div>
         <div class="page_container">
             <div class="all_hours_container">
                 <div class="row">
@@ -50,19 +51,19 @@
             template: template, // the variable template will be injected
             data: function() {
                 return {
-                    hoursSideImage:null
+                    hoursImage:null
                 }
             },
             created() {
                 this.loadData().then(response => {
                     this.dataloaded = true;
                     
-                    var temp_repo = this.findRepoByName('Hours Side Image');
+                    var temp_repo = this.findRepoByName('Hours Image');
                     if(temp_repo) {
-                        this.hoursSideImage = temp_repo.images[0];
+                        this.hoursImage = temp_repo.images[0];
                     } else {
-                        this.hoursSideImage = {};
-                        this.hoursSideImage.image_url = "";
+                        this.hoursImage = {};
+                        this.hoursImage.image_url = "";
                     }
                 });
             },
