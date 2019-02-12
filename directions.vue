@@ -19,7 +19,7 @@
 </style>
 <script>
     define(["Vue", "vuex"], function(Vue, Vuex) {
-        return Vue.component("hours-component", {
+        return Vue.component("directions-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
