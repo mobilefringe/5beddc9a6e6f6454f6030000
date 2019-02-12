@@ -129,7 +129,7 @@
                     }
                 },
                 shareURL(slug){
-                    var share_url = "http://rollinghills.ca/events/" + slug;
+                    var share_url = "https://www.rollinghillsplaza.com/stores/" + slug;
                     return share_url;
                 }
             }
