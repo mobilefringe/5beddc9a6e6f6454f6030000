@@ -75,13 +75,9 @@
                     var categoryData = [];
                     _.forEach(categories, function (value, key) {
                         if (value.store_ids != null) {
-                            if (value.name != "All Stores") {
-                                if(_.startsWith(value.name, 'The ')) {
-                                    value.name_sort = _.trimStart(value.name, 'The ')
-                                    value.name_sort = _.trimStart(value.name_sort)
-                                } else {
+                        
                                     value.name_sort = value.name
-                                }  
+                            
                                 var name = value.name;
                                 var id = value.id;
                                 var sort = value.name_sort;
@@ -93,7 +89,7 @@
                                     }
                                     categoryData.push(object)
                                 }
-                            }
+                            
                         }
                     });
                     
