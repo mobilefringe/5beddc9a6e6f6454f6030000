@@ -1,38 +1,37 @@
 <template>
-	<div class="events_container" v-if="dataLoaded"><!-- template will not render without an outer container -->
+	<div class="events_container" v-if="dataLoaded"> <!-- template will not render without an outer container -->
 	    <div class="inside_page_banner margin_30" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
-		<div class="promo_container" v-if="dineList.length > 0">
-		    <div class=" promo_dets" v-for="item in dineList">
-    			<div class="row page_container">
-    				<div class="col-sm-7" >
-    					<div class="promo_div_image" v-lazy-container="{ selector: 'img' }">
-    						<img :data-src="promo.image_url"  data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
-    					</div>
-    				</div>
-    				<div class="col-sm-5 promo_div_dets text-left">
-    					<p class="promo_div_name">{{promo.name}}</p>
-    					<p class="promo_div_date">{{item.start_date | moment("MMM D", timezone)}} - {{item.end_date | moment("MMM D", timezone)}}</p>
-    					<p class="promo_div_description">{{item.description_short}}</p>
-    					<div class="promo_feature_share row is-table-row">
-        					<span class="feature_read_more col-sm-8">
-        						<router-link :to="'/events/'+item.slug" class="mobile_readmore" >
-        							<p class="feature-readmore hvr-sweep-to-right" :aria="item.name">View Event Details<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
-        						</router-link>
-        					</span>
-        					<div class="text-right  col-sm-4" v-if="promo">
-            					<social-sharing :url="shareURL(item.slug)" :title="item.title" :description="item.body" :quote="_.truncate(item.description, {'length': 99})" twitter-user="" :media="item.image_url" inline-template >
-                                <div class="blog-social-share">
-                                    <div class="social_share">
-                                        <network network="facebook">
-                                            <i class="fa fa-facebook"></i>
-                                        </network>
-                                        <network network="twitter">
-                                            <i class="fa fa-twitter"></i>
-                                        </network>
-                                    </div>
+		
+	    <div class="promo_dets" v-for="item in dineList">
+			<div class="row page_container">
+				<div class="col-sm-7" >
+					<div class="promo_div_image" v-lazy-container="{ selector: 'img' }">
+						<img :data-src="promo.image_url"  data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
+					</div>
+				</div>
+				<div class="col-sm-5 promo_div_dets text-left">
+					<p class="promo_div_name">{{promo.name}}</p>
+					<p class="promo_div_date">{{item.start_date | moment("MMM D", timezone)}} - {{item.end_date | moment("MMM D", timezone)}}</p>
+					<p class="promo_div_description">{{item.description_short}}</p>
+					<div class="promo_feature_share row is-table-row">
+    					<span class="feature_read_more col-sm-8">
+    						<router-link :to="'/events/'+item.slug" class="mobile_readmore" >
+    							<p class="feature-readmore hvr-sweep-to-right" :aria="item.name">View Event Details<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>
+    						</router-link>
+    					</span>
+    					<div class="text-right  col-sm-4" v-if="promo">
+        					<social-sharing :url="shareURL(item.slug)" :title="item.title" :description="item.body" :quote="_.truncate(item.description, {'length': 99})" twitter-user="" :media="item.image_url" inline-template >
+                            <div class="blog-social-share">
+                                <div class="social_share">
+                                    <network network="facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </network>
+                                    <network network="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </network>
                                 </div>
-                            </social-sharing>
-        					</div>
+                            </div>
+                        </social-sharing>
     					</div>
 					</div>
 				</div>
