@@ -8,13 +8,10 @@
                         <div class="col-md-3">
                             <h3 class="inside_page_title">Find a Store</h3>
                             <v-select v-if="allCategories" v-model="selected" :options="allCategories" :searchable="false" class="category-select"></v-select>
-                            <div class="hidden_phone">
-                                
-                                <div class="store_list_container hidden-mobile" v-if="allStores">
-                                    <p class="store_name" v-for="store in allStores" v-on:click="dropPin(store)">{{store.name}}</p>
-                                </div>
+                            <div class="store_list_container hidden-mobile" v-if="allStores">
+                                <p class="store_name" v-for="store in allStores" v-on:click="dropPin(store)">{{store.name}}</p>
                             </div>
-                            <div class="show_phone mobile_store_select">
+                            <div class="mobile_store_select">
                                 <v-select 
                                     :options="allStores" 
                                     :placeholder="'Select A Store'" 
