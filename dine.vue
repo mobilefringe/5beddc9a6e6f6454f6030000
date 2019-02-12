@@ -103,8 +103,8 @@
                         //     o.image_url = "http://placehold.it/930x440";
                         // }
                         
-                        if (value.description.length > 120) {
-                            value.description_short =  _.truncate(value.description, { 'length': 120, 'separator': '...' });
+                        if (value.description.length > 110) {
+                            value.description_short =  _.truncate(value.description, { 'length': 110, 'separator': '...' });
                         } else {
                              value.description_short = value.description;
                         }
