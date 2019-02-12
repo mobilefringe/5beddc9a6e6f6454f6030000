@@ -70,7 +70,6 @@
                 ]),
                 allCategories() {
                     var categories = this.processedCategories
-                    console.log("categories", categories)
                     var categoryData = [];
                     _.forEach(categories, function (value, key) {
                         if (value.store_ids != null) {
@@ -92,7 +91,6 @@
                 },
                 allStores() {
                     var all_stores = this.processedStores;
-
                     if (typeof(this.selected) == "string" || typeof(this.selected) == undefined){
                         _.forEach(all_stores, function(value, key) {
                             value.zoom = 2;
@@ -100,17 +98,14 @@
                                 value.svgmap_region = value.id;
                             }
                         });
-                        
                         return all_stores
-                        
                     } else {
                         try {
                             var catName = this.selected.value;
                             var sortedList = _.filter(all_stores, function(o) { return _.indexOf(o.categories, _.toNumber(catName)) > -1; });
-                        
                             return sortedList
                         } catch (e) {
-                        
+                            console.log("errer", e)
                         }
                     }
                 },
@@ -136,7 +131,6 @@
                 },
                 floorList () {
                     var floor_list = [];
-                    
                     var floor_1 = {};
                     floor_1.id = "first-floor";
                     floor_1.title = "Level One";
