@@ -1,7 +1,8 @@
 <template>
     <div> <!-- template will not render without an outer container -->
         <transition name="fade">
-            <div v-if="dataLoaded" v-cloak>
+            <!--<div v-if="dataLoaded" v-cloak>-->
+                <div class="inside_page_banner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
                 <div class="page_container margin_30">
                     <div class="row">
                         <div class="col-md-3">
@@ -26,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!--</div>-->
         </transition>
     </div>
 </template>
@@ -44,7 +45,7 @@
             },
             created (){
                 this.loadData().then(response => {
-                    var temp_repo = this.findRepoByName('Map Banner');
+                    var temp_repo = this.findRepoByName('Dine Image');
                     if (temp_repo && temp_repo.images) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
