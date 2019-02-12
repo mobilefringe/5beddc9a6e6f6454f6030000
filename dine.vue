@@ -99,9 +99,9 @@
                     console.log("dine_stores", dine_stores)
                     _.forEach(dine_stores, function(value, key) {
 
-                        if (_.includes(o.image_url, 'missing')) {
-                            o.image_url = "http://placehold.it/930x440";
-                        }
+                        // if (_.includes(o.image_url, 'missing')) {
+                        //     o.image_url = "http://placehold.it/930x440";
+                        // }
                         
                         if (value.description.length > 120) {
                             value.description_short =  _.truncate(value.description, { 'length': 120, 'separator': '...' });
