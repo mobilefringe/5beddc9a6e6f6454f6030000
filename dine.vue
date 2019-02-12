@@ -93,29 +93,13 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
-                    "findRepoByName",
-                    'processedEvents'
+                    'findRepoByName',
+                
                 ]),
-                events() {
-                    var vm = this;
-                    var temp_promo = [];
-                    var temp_job = [];
-                    _.forEach(this.processedEvents, function(value, key) {
-                        value.description_short = _.truncate(value.description, {
-                            'length': 70
-                        });
-                        // if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                        //     value.store.image_url = vm.property.default_logo_url;
-                        // }
-                        if (_.includes(value.image_url, 'missing')) {
-                            value.image_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/jpeg/1544725619000/EventsImage-PlaceHolder-3.jpg";
-                        }
-                            
-                        temp_promo.push(value);
-                    });
+                dineList(){
+        
+                    let cafes = this.storesByCategoryName["NorthPark Cafés"]
                     
-                    _.sortBy(temp_promo, [function(o) { return o.start_date; }]);
-                    return temp_promo;
                 }
             },
             methods: {
@@ -123,7 +107,7 @@
                     try {
                         let results = await Promise.all([
                             this.$store.dispatch("getData", "repos"),
-                            this.$store.dispatch("getData", "events")
+                            this.$store.dispatch("getData", "categories")
                         ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
