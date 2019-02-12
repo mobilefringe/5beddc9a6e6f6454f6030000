@@ -53,16 +53,17 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let host_name = this.property.mm_host.replace("http:", "");
-                        let results = await Promise.all([ 
-                            this.$store.dispatch("getData", "repos"),
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: host_name + "/pages/rollinghills-directions.json" })
+                        var host_name = this.property.mm_host.replace("http:", "");
+                        let results = await Promise.all([
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: host_name + "/pages/rollinghills-directions.json" }), 
+                            this.$store.dispatch("getData", "repos")
                         ]);
                         console.log("results", results)
+                        return results;
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
+                }
             }
         });
     });
