@@ -40,6 +40,9 @@
     .hours_page_container .row{
         margin-left:inherit;
     }
+    .footer-div {
+        margin-top: 0;
+    }
 </style>
 <script>
     define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment"], function(Vue, Vuex, moment, tz, VueMoment) {
