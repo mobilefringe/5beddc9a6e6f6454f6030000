@@ -103,6 +103,15 @@ define([], function() {
             }]
         },
         {
+            path: '/directions',
+            component: view('default'),
+            children: [{
+                path: '',
+                component: view('directions'),
+                name: 'directions'
+            }]
+        },
+        {
             path: '/newsletter',
             component: view('default'),
             children: [{
