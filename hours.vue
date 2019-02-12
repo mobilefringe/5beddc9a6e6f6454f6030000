@@ -4,7 +4,7 @@
         <div class="page_container">
             <div class="all_hours_container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="col-md-6">
                         <h2 class="hours_heading text-left" >Regular Shopping Hours</h2>
                         <div id="hours_container" class="hours_container">
                             <div class="hours_div text-left" v-for="hour in hours">
@@ -13,9 +13,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7 col-sm-7 hidden_phone">
-                        <img :src="hoursSideImage.image_url" alt=""/>
-                    </div> 
+                    <div class="col-md-6">
+                        <div class="padding_tb_30"></div>
+                        
+                        <h2 class="hours_heading text-left">Extended Holiday Hours</h2>
+                        <div id="holidays_hours_container" class="hours_container">
+                            <div class="hours_div text-left"  v-for="hour in reducedHolidays">
+                                <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
+                                <span>{{hour.open_time | moment("h:mm A", timezone)}} - {{hour.close_time | moment("h:mm A", timezone)}}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="padding_tb_30"></div>
+                        
+                        <h2 class="hours_heading text-left">Holiday Closures</h2>
+                        <div id="closed_hours_container" class="hours_container">
+                            <div class="hours_div text-left" v-for="hour in closeHolidays">
+                                <span>{{hour.holiday_name}} ({{hour.holiday_date | moment("MMM D YYYY", timezone)}})</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--<div class="col-md-7 col-sm-7 hidden_phone">-->
+                    <!--    <img :src="hoursSideImage.image_url" alt=""/>-->
+                    <!--</div> -->
                 </div>
                 <div class="row">
                     <div class="col-md-12 ">
