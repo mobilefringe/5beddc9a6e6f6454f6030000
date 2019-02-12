@@ -50,6 +50,7 @@
             methods: {
                 loadData: async function() {
                     try {
+                        host_name = this.property.mm_host.replace("http:", "");
                         let results = await Promise.all([ 
                             this.$store.dispatch("getData", "repos"),
                             this.$store.dispatch('LOAD_PAGE_DATA', { url: host_name + "/pages/rollinghills-directions.json" }), 
