@@ -14,8 +14,6 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="padding_tb_30"></div>
-                        
                         <h2 class="hours_heading text-left">Extended Holiday Hours</h2>
                         <div id="holidays_hours_container" class="hours_container">
                             <div class="hours_div text-left"  v-for="hour in reducedHolidays">
