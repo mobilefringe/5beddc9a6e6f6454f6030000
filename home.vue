@@ -1,6 +1,5 @@
 <template>
-    <div>
-   
+    <div> <!-- template will not render without an outer container -->
     	<div class="row page_container" v-if="dataLoaded" v-cloak>
     	    <div class="custom_popup" v-if="show_popup">
                 <div class="popup_form_div">
