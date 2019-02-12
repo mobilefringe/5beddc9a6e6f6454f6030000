@@ -6,9 +6,10 @@
                 <div class="page_container margin_30">
                     <div class="row">
                         <div class="col-md-3">
-                        <v-select v-if="allCategories" v-model="selected" :options="allCategories" :searchable="false" class="category-select"></v-select>
+                            <h3 class="inside_page_title">Find Store</h3>
+                            <v-select v-if="allCategories" v-model="selected" :options="allCategories" :searchable="false" class="category-select"></v-select>
                             <div class="hidden_phone">
-                                <h3 class="inside_page_title">Find Store</h3>
+                                
                                 <div class="store_list_container hidden-mobile" v-if="allStores">
                                     <p class="store_name" v-for="store in allStores" v-on:click="dropPin(store)">{{store.name}}</p>
                                 </div>
