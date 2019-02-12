@@ -6,7 +6,7 @@
                 <div class="page_container margin_30">
                     <div class="row">
                         <div class="col-md-3">
-                            <h3 class="inside_page_title">Find Store</h3>
+                            <h3 class="inside_page_title">Find a Store</h3>
                             <v-select v-if="allCategories" v-model="selected" :options="allCategories" :searchable="false" class="category-select"></v-select>
                             <div class="hidden_phone">
                                 
