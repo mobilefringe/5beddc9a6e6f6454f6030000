@@ -16,7 +16,7 @@
     					<span class="feature_read_more col-sm-8 no_padding">
     						<router-link :to="'/stores/'+ item.slug" class="mobile_readmore">
     							<p class="feature-readmore hvr-sweep-to-right" :aria="item.name">
-    							    View Details<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+    							    View Dining Details<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
 							    </p>
     						</router-link>
     					</span>
