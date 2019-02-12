@@ -73,25 +73,12 @@
     		</div>
     		<div>
     			<div class="feature-div clearfix">
-    				<!--<span>-->
-    					<div class="feature-box col-sm-4" v-for="item in feature_items">
-    						<!--<p class="feature-title">{{item.name}}</p>-->
-    						<!--<img :src="item.image_url" class="feature-image" :alt="'Click here for more info on '+item.name"/>-->
-    						<router-link :to="item.url" class=" feature_link">
-        						<img class="hvr-grow-shadow" :src='item.image_url' :alt="'Click here for more info on ' +item.name"/>
-        						<div class="feature_overlay text-uppercase ">{{item.name}}</div>
-    					    </router-link>
-    						<!--<p class="feature-html">{{item.html}}</p>-->
-    						<!--<span class="feature_read_more">-->
-    						<!--    <a v-if="item.external" :href="item.url" class="mobile_readmore" target="_blank">-->
-    						<!--        <p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>-->
-    						<!--    </a>-->
-    						<!--	<router-link v-else :to="item.url" class="mobile_readmore">-->
-    						<!--		<p class="feature-readmore hvr-sweep-to-right">View {{item.name}}<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></p>-->
-    						<!--	</router-link>-->
-    						<!--</span>-->
-    					</div>
-    				<!--</span>-->
+					<div class="feature-box col-sm-4" v-for="item in feature_items">
+						<router-link :to="item.url" class=" feature_link">
+    						<img class="hvr-grow-shadow" :src='item.image_url' :alt="'Click here for more info on ' +item.name"/>
+    						<div class="feature_overlay text-uppercase ">{{item.name}}</div>
+					    </router-link>
+					</div>
     			</div>
     		</div>
     		<div class="margin_30"></div>
@@ -181,8 +168,12 @@
             methods: {
                 loadData: async function() {
                     try {
-                        // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
-                        let results = await Promise.all([this.$store.dispatch("getData", "banners"), this.$store.dispatch("getData", "feature_items"), this.$store.dispatch("getData", "promotions"), this.$store.dispatch("getData", "popups")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "banners"), 
+                            this.$store.dispatch("getData", "feature_items"), 
+                            this.$store.dispatch("getData", "promotions"), 
+                            this.$store.dispatch("getData", "popups")
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
@@ -196,8 +187,8 @@
                 return {
                     title: this.meta.meta_title,
                     meta: [
-                        {name: 'description', content: this.meta.meta_description},
-                        {name: 'keywords', content: this.meta.meta_keywords}
+                        { name: 'description', content: this.meta.meta_description },
+                        { name: 'keywords', content: this.meta.meta_keywords }
                     ] 
                 }
             }
