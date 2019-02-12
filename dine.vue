@@ -1,7 +1,6 @@
 <template>
 	<div class="events_container" v-if="dataLoaded"> <!-- template will not render without an outer container -->
 	    <div class="inside_page_banner margin_30" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
-		
 	    <div class="promo_dets" v-for="item in dineList">
 			<div class="row page_container">
 				<div class="col-sm-7" >
@@ -60,8 +59,7 @@
 </style>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "vue-meta", "vue-lazy-load"], function(Vue, Vuex, moment, tz, VueMoment, Meta, VueLazyload) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "vue-lazy-load"], function(Vue, Vuex, VueLazyload) {
         Vue.use(VueLazyload);
         return Vue.component("dine-component", {
             template: template, // the variable template will be injected
@@ -94,9 +92,7 @@
                     'storesByCategoryName'
                 ]),
                 dineList(){
-        
                     var dine_stores = this.storesByCategoryName["Dine"];
-                    console.log("dine_stores", dine_stores)
                     _.forEach(dine_stores, function(value, key) {
                         if (_.includes(value.store_front_alt_url_abs, "missing")) {
                             if (_.includes(value.store_front_url_abs, "missing")) {
@@ -111,10 +107,8 @@
                         if (value.description.length > 110) {
                             value.description_short =  _.truncate(value.description, { 'length': 110, 'separator': '...' });
                         } else {
-                             value.description_short = value.description;
+                            value.description_short = value.description;
                         }
-         
-  
                     });
                     
                     dine_stores = _.uniqBy(dine_stores, function (o) { return o.name });
