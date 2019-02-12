@@ -113,8 +113,8 @@
                     });
                     
                     dine_stores = _.uniqBy(dine_stores, function (o) { return o.name });
-                    return dine_stores
                     
+                    return dine_stores
                 }
             },
             methods: {
