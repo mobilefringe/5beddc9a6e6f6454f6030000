@@ -4,6 +4,7 @@
         <div class="page_container">
             <div class="row">
                 <div class="col-md-12">
+                    <h3 class="inside_page_title">Directions</h3>
                     <div class="text-left" v-html="currentPage.body"></div>
                 </div>
             </div>
