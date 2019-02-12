@@ -75,25 +75,19 @@
                     var categoryData = [];
                     _.forEach(categories, function (value, key) {
                         if (value.store_ids != null) {
-                        
-                                    value.name_sort = value.name
+                            var name = value.name;
+                            var id = value.id;
                             
-                                var name = value.name;
-                                var id = value.id;
-                                var sort = value.name_sort;
-                                if (name != null && id != null) {
-                                    var object = {
-                                        'label': name,
-                                        'value': id,
-                                        'sort': sort,
-                                    }
-                                    categoryData.push(object)
+                            if (name != null && id != null) {
+                                var object = {
+                                    'label': name,
+                                    'value': id,
                                 }
-                            
+                                categoryData.push(object)
+                            }
                         }
                     });
                     
-                    categoryData = _.orderBy(categoryData, function (o) { return _.toUpper(o.sort) });
                     categoryData.unshift('All');
                     return categoryData
                 },
@@ -121,7 +115,6 @@
                         }
                     }
                 },
-      
                 mapStores() {
                     var all_stores = this.processedStores;
                     _.forEach(all_stores, function(value, key) {
@@ -140,7 +133,7 @@
                     return all_stores
                 },
                 getSVGMap(){
-                  return "//mallmaverick.com"+this.property.svgmap_url;  
+                  return "https://www.mallmaverick.com" + this.property.svgmap_url;  
                 },
                 floorList () {
                     var floor_list = [];
