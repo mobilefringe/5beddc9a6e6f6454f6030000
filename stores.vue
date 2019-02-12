@@ -71,6 +71,7 @@
                 ]),
                 allCategories() {
                     var categories = this.processedCategories
+                    console.log("categories", categories)
                     var categoryData = [];
                     _.forEach(categories, function (value, key) {
                         if (value.store_ids != null) {
