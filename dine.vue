@@ -98,7 +98,8 @@
                 ]),
                 dineList(){
         
-                    let cafes = this.storesByCategoryName["NorthPark Cafés"]
+                    var dine_stores = this.storesByCategoryName["Dine"]
+                    console.log("dine_stores", dine_stores)
                     
                 }
             },
