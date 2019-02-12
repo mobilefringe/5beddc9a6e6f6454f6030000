@@ -1,5 +1,6 @@
 <template>
 	<div class="events_container" v-if="dataLoaded"><!-- for some reason if you do not put an outer container div this component template will not render -->
+	    <div class="inside_page_banner margin_30" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
 		<div class="promo_container" v-if="events.length > 0">
 		    <div class=" promo_dets" v-for="promo in events">
     			<div class="row page_container">
@@ -73,6 +74,16 @@
               }  
             },
             created () {
+                var temp_repo = this.findRepoByName('Dine Image');
+                    if (temp_repo && temp_repo.images) {
+                       temp_repo = temp_repo.images;
+                       this.pageBanner = temp_repo[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1531495616000/inside_banner.png"
+                        }
+                    }
+                    
                 this.$store.dispatch("getData", "events").then(response => {
                    this.dataLoaded = true;
                 }, error => {
@@ -109,6 +120,16 @@
                 }
             },
             methods: {
+                loadData: async function() {
+                    try {
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "repos"),
+                            this.$store.dispatch("getData", "events")
+                        ]);
+                    } catch (e) {
+                        console.log("Error loading data: " + e.message);
+                    }
+                },
                 shareURL(slug){
                     var share_url = "http://rollinghills.ca/events/" + slug;
                     return share_url;
