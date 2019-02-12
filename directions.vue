@@ -56,8 +56,8 @@
                     try {
                         let host_name = this.property.mm_host.replace("http:", "");
                         let results = await Promise.all([ 
-                            this.$store.dispatch('LOAD_PAGE_DATA', { url: host_name + "/pages/rollinghills-directions.json" }), 
-                            this.$store.dispatch("getData", "repos")
+                            this.$store.dispatch("getData", "repos"),
+                            this.$store.dispatch('LOAD_PAGE_DATA', { url: host_name + "/pages/rollinghills-directions.json" })
                         ]);
                         console.log("results", results)
                     } catch (e) {
