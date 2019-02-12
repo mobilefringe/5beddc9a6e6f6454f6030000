@@ -95,8 +95,10 @@
                 ]),
                 dineList(){
         
-                    var dine_stores = this.storesByCategoryName["Dine"]
+                    var dine_stores = this.storesByCategoryName["Dine"];
                     console.log("dine_stores", dine_stores)
+                    
+                    return dine_stores
                     
                 }
             },
