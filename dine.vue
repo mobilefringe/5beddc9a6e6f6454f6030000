@@ -94,7 +94,7 @@
                     'property',
                     'timezone',
                     'findRepoByName',
-                
+                    'storesByCategoryName'
                 ]),
                 dineList(){
         
