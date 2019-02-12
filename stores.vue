@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <mapplic-map ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details" :svgHeight="2500" :svgWidth="2500"></mapplic-map>
+                            <mapplic-map ref="mapplic_ref" :height="566" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="mapStores" :floorlist="floorList" tooltiplabel="View Store Details" :svgHeight="2500" :svgWidth="2500"></mapplic-map>
                         </div>
                     </div>
                 </div>
@@ -98,6 +98,31 @@
                     return categoryData
                 },
                 allStores() {
+                    var all_stores = this.processedStores;
+
+                    if (typeof(this.selected) == "string" || typeof(this.selected) == undefined){
+                        _.forEach(all_stores, function(value, key) {
+                            value.zoom = 2;
+                            if(!value.svgmap_region){
+                                value.svgmap_region = value.id;
+                            }
+                        });
+                        
+                        return all_stores
+                        
+                    } else {
+                        try {
+                            var catName = this.selected.value;
+                            var sortedList = _.filter(all_stores, function(o) { return _.indexOf(o.categories, _.toNumber(catName)) > -1; });
+                        
+                            return sortedList
+                        } catch (e) {
+                        
+                        }
+                    }
+                },
+      
+                mapStores() {
                     var all_stores = this.processedStores;
                     _.forEach(all_stores, function(value, key) {
                         value.zoom = 2;
