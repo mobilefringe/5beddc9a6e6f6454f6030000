@@ -98,11 +98,16 @@
                     var dine_stores = this.storesByCategoryName["Dine"];
                     console.log("dine_stores", dine_stores)
                     _.forEach(dine_stores, function(value, key) {
+                        if (_.includes(value.store_front_alt_url_abs, "missing")) {
+                            if (_.includes(value.store_front_url_abs, "missing")) {
+                                
+                            } else {
+                                value.image_url = value.store_front_url_abs;
+                            }
+                        } else {
+                            value.image_url = value.store_front_alt_url_abs;
+                        }
 
-                        // if (_.includes(o.image_url, 'missing')) {
-                        //     o.image_url = "http://placehold.it/930x440";
-                        // }
-                        
                         if (value.description.length > 110) {
                             value.description_short =  _.truncate(value.description, { 'length': 110, 'separator': '...' });
                         } else {
