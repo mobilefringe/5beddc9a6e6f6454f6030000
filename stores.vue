@@ -6,6 +6,7 @@
                 <div class="page_container margin_30">
                     <div class="row">
                         <div class="col-md-3">
+                        <v-select v-if="allCategories" v-model="selected" :options="allCategories" :searchable="false" class="category-select"></v-select>
                             <div class="hidden_phone">
                                 <h3 class="inside_page_title">Find Store</h3>
                                 <div class="store_list_container hidden-mobile" v-if="allStores">
@@ -65,6 +66,37 @@
                     "findRepoByName",
                     "processedStores",
                 ]),
+                allCategories() {
+                    var categories = this.processedCategories
+                    var categoryData = [];
+                    _.forEach(categories, function (value, key) {
+                        if (value.store_ids != null) {
+                            if (value.name != "All Stores") {
+                                if(_.startsWith(value.name, 'The ')) {
+                                    value.name_sort = _.trimStart(value.name, 'The ')
+                                    value.name_sort = _.trimStart(value.name_sort)
+                                } else {
+                                    value.name_sort = value.name
+                                }  
+                                var name = value.name;
+                                var id = value.id;
+                                var sort = value.name_sort;
+                                if (name != null && id != null) {
+                                    var object = {
+                                        'label': name,
+                                        'value': id,
+                                        'sort': sort,
+                                    }
+                                    categoryData.push(object)
+                                }
+                            }
+                        }
+                    });
+                    
+                    categoryData = _.orderBy(categoryData, function (o) { return _.toUpper(o.sort) });
+                    categoryData.unshift('All');
+                    return categoryData
+                },
                 allStores() {
                     var all_stores = this.processedStores;
                     _.forEach(all_stores, function(value, key) {
