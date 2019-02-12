@@ -29,7 +29,7 @@
             },
             created() {
                 this.loadData().then(response => {
-                    console.log("res", response)
+                    console.log("res", this.response)
                     this.dataloaded = true;
                     
                     var temp_repo = this.findRepoByName('Hours Image');
