@@ -75,7 +75,6 @@
                         if (value.store_ids != null) {
                             var name = value.name;
                             var id = value.id;
-                            
                             if (name != null && id != null) {
                                 var object = {
                                     'label': name,
