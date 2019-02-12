@@ -4,7 +4,7 @@
         <div class="page_container">
             <div class="row">
                 <div class="col-md-12">
-                    <div v-html=""></div>
+                    <div v-html="currentPage.body"></div>
                 </div>
             </div>
         </div>
