@@ -69,12 +69,14 @@
         return Vue.component("dine-component", {
             template: template, // the variable template will be injected
             data () {
-              return {
-                  dataLoaded: false
-              }  
+                return {
+                    dataLoaded: false,
+                     pageBanner: null,
+                }  
             },
             created () {
-                var temp_repo = this.findRepoByName('Dine Image');
+                this.loadData().then(response => {
+                    var temp_repo = this.findRepoByName('Dine Image');
                     if (temp_repo && temp_repo.images) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
@@ -83,12 +85,8 @@
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1531495616000/inside_banner.png"
                         }
                     }
-                    
-                this.$store.dispatch("getData", "events").then(response => {
-                   this.dataLoaded = true;
-                }, error => {
-                    console.error("Could not retrieve data from server. Please check internet connection and try again.");
-                    this.$router.replace({ path: '/'});
+
+                    this.dataLoaded = true;
                 });
             },
             computed: {
