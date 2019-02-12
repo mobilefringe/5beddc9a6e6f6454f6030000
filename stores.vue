@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div> <!-- template will not render without an outer container -->
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
                 <div class="page_container margin_30">
@@ -45,11 +45,10 @@
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Map Banner');
-                    if(temp_repo && temp_repo.images) {
+                    if (temp_repo && temp_repo.images) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5b88438d6e6f641e8d3c0000/image/png/1531495616000/inside_banner.png"
                         }
@@ -85,43 +84,6 @@
                 getSVGMap(){
                   return "//mallmaverick.com"+this.property.svgmap_url;  
                 },
-                // getSVGMap() {
-                //     var svg_maps = this.findRepoByName("SVG Maps")
-                //     if(svg_maps != null && svg_maps !== undefined){
-                //         svg_maps = svg_maps.images;
-                //         var floor_one = "";
-                //         var floor_two = "";
-                //         _.forEach(svg_maps, function(value, key) {
-                //             if(value.id == 41084) {
-                //                 floor_one = _.split(value.image_url, '?');
-                //                 floor_one = floor_one[0];
-                //             }
-                //             if (value.id == 41085) {
-                //                 floor_two = _.split(value.image_url, '?');
-                //                 floor_two = floor_two[0];
-                //             }
-                //         });
-                //         this.floorOne = floor_one;
-                //         this.floorTwo = floor_two;
-                //     }
-                // },
-                // getMiniMap () {
-                //     var svg_maps = this.findRepoByName("PNG Mini Map").images 
-                //     var floor_one = "";
-                //     var floor_two = "";
-                //     _.forEach(svg_maps, function(value, key) {
-                //         if(value.id == 37990) {
-                //             floor_one = _.split(value.image_url, '?');
-                //             floor_one = floor_one[0];
-                //         }
-                //         if (value.id == 37991) {
-                //             floor_two = _.split(value.image_url, '?');
-                //             floor_two = floor_two[0];
-                //         }
-                //     });
-                //     this.miniOne = floor_one;
-                //     this.miniTwo = floor_two;
-                // },
                 floorList () {
                     var floor_list = [];
                     
