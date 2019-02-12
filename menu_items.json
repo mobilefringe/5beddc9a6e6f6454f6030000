@@ -2,7 +2,18 @@
     {
         "name": "Directory",
         "id": "stores_link",
-        "href": "/stores"
+        "href": "",
+        "show_sub_menu": false,
+        "sub_menu": [
+            {
+                "name": "Store Directory",
+                "href": "/stores"
+            },
+            {
+                "name": "Dining",
+                "href": "/dine"
+            }
+        ]
     },
     {
         "name": "Promotions",
