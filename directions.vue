@@ -24,7 +24,7 @@
             data: function() {
                 return {
                     hoursImage: null,
-                    currentPage : null,
+                    currentPage: {},
                 }
             },
             created() {
