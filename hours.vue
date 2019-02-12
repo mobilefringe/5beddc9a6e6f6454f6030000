@@ -1,6 +1,5 @@
 <template>
     <div class="hours_page_container"> <!-- for some reason if you do not put an outer container div this component template will not render -->
-        <!--<img style= "width: 100%;" :src="hoursImage.image_url" alt="" class="show_phone">  -->
         <div class="inside_page_banner" :style="{ backgroundImage: 'url(' + hoursImage.image_url + ')' }"></div>
         <div class="page_container">
             <div class="all_hours_container">
