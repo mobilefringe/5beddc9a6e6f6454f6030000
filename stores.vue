@@ -1,7 +1,7 @@
 <template>
     <div> <!-- template will not render without an outer container -->
         <transition name="fade">
-            <!--<div v-if="dataLoaded" v-cloak>-->
+            <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_banner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }"></div>
                 <div class="page_container margin_30">
                     <div class="row">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-            <!--</div>-->
+            </div>
         </transition>
     </div>
 </template>
