@@ -24,19 +24,7 @@
     					<p v-html="currentEvent.rich_description"></p>
     				</div>
     			</div>
-    			<social-sharing :url="$root.shareURL('events',currentEvent.slug)" :title="currentEvent.title" :description="currentEvent.body" :quote="_.truncate(currentEvent.body, {'length': 99})" twitter-user="" :media="currentEvent.image_url" inline-template >
-                    <div class="blog-social-share text-left">
-                        <p style="display: inline-block;">Share: </p>
-                        <div class="social_share" style="display: inline-block;">
-                            <network network="facebook">
-                                <i class="fa fa-facebook"></i>
-                            </network>
-                            <network network="twitter">
-                                <i class="fa fa-twitter"></i>
-                            </network>
-                        </div>
-                    </div>
-                </social-sharing>
+    			
 			</div>
 		</div>
 		<div class="row" style="margin-left:0; margin-top: 20px;">
