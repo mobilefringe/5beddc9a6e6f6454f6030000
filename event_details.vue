@@ -57,7 +57,7 @@
 		    <div class="row event_promo_dets text-left is-table-row border_bottom" v-for="promo in storePromos">
 		        <div class="col-sm-7" >
 		        <div class="promo_div_image text-left" v-if="_.includes(promo.image_url, 'missing')">
-		            <img :src="property.default_logo_url"/>
+		            <img :src="property.default_logo_url" :alt="property.name"/>
 		        </div>
 		        <div class="promo_div_image text-left" v-else v-lazy-container="{ selector: 'img' }">
 		            <img :data-src="promo.image_url" data-loading='//codecloud.cdn.speedyrails.net/sites/5b16b9686e6f6426c91e0000/image/png/1521035009104/Screen Shot 2018-03-14 at 9.43.24 AM.png' alt=""/>
