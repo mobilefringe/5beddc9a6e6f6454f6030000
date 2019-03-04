@@ -84,7 +84,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
         created() {
             this.loadData().then(response => {
                 this.dataLoaded = true;
-                this.property.default_logo_url = "http://via.placeholder.com/600/000/ccc";
+                this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5beddc9a6e6f6454f6030000/image/png/1551716605000/rolling.png";
             });
 
         },
@@ -142,7 +142,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             shareURL(page,slug){
                 var share_url= "http://www.langhamsquare.ca/" + page + "/" + slug;
                 return share_url;
-            },
+            }
         },
         router: router,
         store,
