@@ -33,10 +33,7 @@
         "href": "",
         "show_sub_menu": false,
         "sub_menu": [
-            {
-                "name": "Guest Services ",
-                "href": "/pages/rollinghills-guest-services"
-            },
+            
             {
                 "name": "Directions",
                 "href": "/directions"
