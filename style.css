@@ -3071,7 +3071,8 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
     .event_logo_container img{
         border: 1px solid #aea99e;
         width:300px;
-        height:300px
+        height:300px;
+        object-fit: contain;
     }
     .event_details_container h1{
         padding: 0;
