@@ -19,7 +19,7 @@
     					<router-link to="/contact_us" style="font-size:12px; margin-right:10px; color:#515151; display: inline-block; height: 30px; line-height: 30px;">CONTACT US</router-link>
     					<a href="https://www.instagram.com/" target="_blank" class="social_link_icon social_twitter" :alt="property.name + ' Instagram'"><i class="fa fa-instagram"></i><p style="display:none;">Instagram icon</p></a>
     					<a href="http://www.twitter.com/" target="_blank" class="social_link_icon social_twitter" :alt="property.name + ' Twitter'"><i class="fa fa-twitter"></i><p style="display:none;">Twitter icon</p></a>
-    					<a href="http://www.facebook.com/" target="_blank" class="social_link_icon social_fb" :alt="property.name +' Facebook'"><i class="fa fa-facebook"></i><p style="display:none;">Facebook icon</p></a>
+    					<a href="https://www.facebook.com/pages/Rolling-Hills-plaza/104135002991246" target="_blank" class="social_link_icon social_fb" :alt="property.name +' Facebook'"><i class="fa fa-facebook"></i><p style="display:none;">Facebook icon</p></a>
     				</div>
     				<div class="newsletter-div">
     					<div id="search-form" class="search-form">
@@ -80,7 +80,7 @@
 						        </span>
     						</div>
     						<div class="social_icons_menu show_phone text-center">
-    							<a href="https://www.facebook.com/" target="_blank">
+    							<a href="https://www.facebook.com/pages/Rolling-Hills-plaza/104135002991246" target="_blank">
     							    <i class="fa fa-facebook"></i><p style="display:none;">Facebook icon</p>
     							</a>
     							<a href="https://twitter.com" target="_blank">
