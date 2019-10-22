@@ -104,8 +104,8 @@
 						
 						
 						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
-						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{$t(item.name)}}</router-link>
-						        <span tabindex=0 v-if="item.sub_menu != undefined">{{$t(item.name)}}</span>
+						        <router-link v-if="item.sub_menu == undefined" :to="item.href" class="hvr-underline-from-center" :id="item.id">{{$t(item.name)}}</router-link>
+						        <span tabindex=0 v-if="item.sub_menu != undefined" class="hvr-underline-from-center ">{{$t(item.name)}}</span>
 						        <ul v-if="item.sub_menu" class="subdropdown">
 						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
 						                <a v-if="sub_menu.external" :href="sub_menu.href" target="_blank" class="hvr-underline-from-center">{{$t(sub_menu.name)}}</a>
