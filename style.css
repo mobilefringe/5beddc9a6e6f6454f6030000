@@ -422,14 +422,30 @@ a{
     background: transparent;
 }
 
+// #primary_nav ul .menu_item {
+//     &:hover > .subdropdown,
+//     &:focus-within > .subdropdown,
+//     .subdropdown:hover,
+//     .subdropdown.focus {
+//         opacity: 1;
+//         transform: translateX(-50%) translateY(0);
+//     }
+// }
+
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
-    &:focus-within > .subdropdown,
+    &:focus > .subdropdown,
     .subdropdown:hover,
     .subdropdown.focus {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
     }
+}
+
+//for non-IE to allow tabable display on dropdown menu
+#primary_nav ul .menu_item:focus-within > .subdropdown {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 #primary_nav ul .menu_item ul {
