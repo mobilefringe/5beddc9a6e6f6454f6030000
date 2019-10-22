@@ -364,20 +364,23 @@ a{
 	text-align: center;
 }
 
-#primary_nav ul .menu_item a {
-    margin: 0 20px;
-    display: block;
-    // color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-shadow: 0 1px 3px rgba(255,255,255,0.4);
-    padding: 6px 0;
-    font-size: 14px;
-    color: $accent;
-	&:hover {
-	    text-decoration: none;
-	    color : #000;
-	}
+#primary_nav ul .menu_item {
+    a, span {
+        margin: 0 20px;
+        display: block;
+        // color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 1px 3px rgba(255,255,255,0.4);
+        padding: 6px 0;
+        font-size: 14px;
+        color: $accent;
+    	&:hover {
+    	    text-decoration: none;
+    	    color : #000;
+    	}
+    }
+    
 }
 
 #primary_nav ul .menu_item {
