@@ -422,16 +422,6 @@ a{
     background: transparent;
 }
 
-// #primary_nav ul .menu_item {
-//     &:hover > .subdropdown,
-//     &:focus-within > .subdropdown,
-//     .subdropdown:hover,
-//     .subdropdown.focus {
-//         opacity: 1;
-//         transform: translateX(-50%) translateY(0);
-//     }
-// }
-
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
@@ -465,9 +455,6 @@ a{
     }
 }
 
-#primary_nav ul .menu_item:hover > ul {
-	display: block;
-}
 /******** popup ***********/
 .custom_backdrop{
     opacity:0.5;
