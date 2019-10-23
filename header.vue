@@ -112,6 +112,17 @@
 						</ul>
 					</nav>
 					
+					
+					#primary_nav .menu_item {
+                        &:hover > .subdropdown,
+                        &:focus > .subdropdown,
+                        .subdropdown:hover,
+                        .subdropdown.focus {
+                            opacity: 1;
+                            transform: translateX(-50%) translateY(0);
+                        }
+                    }
+					
 					<!--<nav id="primary_nav" class="hidden_phone">-->
 					<!--	<ul>-->
 					<!--	    <li class="menu_item" v-for="item in menu_items" :id="item.id">-->
