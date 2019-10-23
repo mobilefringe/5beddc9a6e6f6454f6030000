@@ -432,7 +432,7 @@ a{
 //     }
 // }
 
-#primary_nav ul .menu_item {
+#primary_nav ul .menu_item .has_sub {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
     .subdropdown:hover,
