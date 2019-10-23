@@ -432,7 +432,7 @@ a{
 //     }
 // }
 
-#primary_nav ul .menu_item {
+#primary_nav ul .hvr-underline-from-center {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
     .subdropdown:hover,
