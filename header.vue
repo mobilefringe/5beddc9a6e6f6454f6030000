@@ -105,7 +105,6 @@
 						        <span tabindex=0 v-if="item.sub_menu != undefined" class="hvr-underline-from-center ">{{$t(item.name)}}</span>
 						        <ul v-if="item.sub_menu" class="subdropdown">
 						            <li v-for="sub_menu in item.sub_menu" class="dropdown_item">
-						                <!--<a v-if="sub_menu.external" :href="sub_menu.href" target="_blank" class="hvr-underline-from-center">{{$t(sub_menu.name)}}</a>-->
 							            <router-link v-else :to="sub_menu.href" class="hvr-underline-from-center">{{$t(sub_menu.name)}}</router-link>
 						            </li>
 								</ul>
