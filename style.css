@@ -432,7 +432,7 @@ a{
 //     }
 // }
 
-#primary_nav ul .menu_item span {
+#primary_nav ul .menu_item {
     &:hover > .subdropdown,
     &:focus > .subdropdown,
     .subdropdown:hover,
@@ -467,9 +467,9 @@ a{
     }
 }
 
-#primary_nav ul .menu_item:hover > ul {
-	display: block;
-}
+// #primary_nav ul .menu_item:hover > ul {
+// 	display: block;
+// }
 /******** popup ***********/
 .custom_backdrop{
     opacity:0.5;
