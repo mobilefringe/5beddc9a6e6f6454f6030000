@@ -46,7 +46,11 @@ require.config({
 });
 
 require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vue-i18n', 'locales','jquery', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component",'vue-simple-spinner','vue!loader.vue', 'vue!header.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages,$, moment, Meta, tz, VueMoment, SocialSharing, VueSelect, SearchComponent, Spinner, Loader, Header) {
-    Vue.use(Meta);
+    
+    Vue.use(Meta, {
+        keyName: 'metaInfo', // the component option name that vue-meta looks for meta info on.
+        tagIDKeyName: 'vmid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
+    });
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
@@ -122,14 +126,17 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
         methods: {
             loadData: async function() {
                 try {
-                    await this.$store.dispatch('initializeApi', {
-                        site: "rollinghills",
-                        version: "v4"
-                    });
+                    await this.$store.dispatch('initializeApi', { site: "rollinghills", version: "v4" });
                     await Promise.all([this.$store.dispatch("getData", "property")]);
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
-                    let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores"),this.$store.dispatch("getData", "promotions"),this.$store.dispatch("getData", "events")]);
-                    await Promise.all([this.$store.dispatch("LOAD_META_DATA")]);
+                    let results = await Promise.all([
+                        this.$store.dispatch("INITIALIZE_LOCALE"), 
+                        this.$store.dispatch("getData", "hours"), 
+                        this.$store.dispatch("getData", "stores"),
+                        this.$store.dispatch("getData", "promotions"),
+                        this.$store.dispatch("getData", "events")
+                    ]);
+                    await Promise.all([this.$store.dispatch("LOAD_META_DATA_NEW")]);
                     return results;
                 } catch (e) {
                     console.log("Error loading data: " + e.message);
