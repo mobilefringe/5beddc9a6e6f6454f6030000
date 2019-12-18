@@ -92,12 +92,18 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!today_hours", 'vue!vue-slick','js-cookie', "vue-meta"], function(Vue, Vuex, TodayHoursComponent, slick, Cookies, Meta) {
-        Vue.use(Meta);
+    define(["Vue", "vuex", "vue-meta", "vue!today_hours", "vue!vue-slick", "js-cookie"], function(Vue, Vuex, Meta, TodayHoursComponent, slick, Cookies) {
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
             data: function() {
                 return {
+                    dataLoaded: false,
+                    meta: {
+                       meta_title: "",
+                       meta_description: "",
+                       meta_keywords: "",
+                       meta_image: ""
+                    },
                     suggestionAttribute: 'name',
                     search: '',
                     slickOptions: {
@@ -108,15 +114,9 @@
                         nextArrow: '.next',
                         autoplay: true
                     },
-                    dataLoaded: false,
                     show_popup: false,
                     popup: null,
-                    formData : {},
-                    meta: {
-                        meta_title: "",
-                        meta_description: "",
-                        meta_keywords: ""
-                    }
+                    formData : {}
                 }
             },
             created () {
@@ -206,11 +206,14 @@
                 return {
                     title: this.meta.meta_title,
                     meta: [
-                        { name: 'description', content: this.meta.meta_description },
-                        { name: 'keywords', content: this.meta.meta_keywords }
-                    ] 
+                        { name: 'description', vmid: 'description', content: this.meta.meta_description },
+                        { name: 'keywords',  vmid: 'keywords', content: this.meta.meta_keywords },
+                        { property: 'og:title', vmid: 'og:title', content: this.meta.meta_title },
+                        { property: 'og:description', vmid: 'og:description', content: this.meta.meta_description },
+                        { property: 'og:image', vmid: 'og:image', content: this.meta.meta_image }
+                    ]
                 }
             }
-        })
-    })
+        });
+    });
 </script>
