@@ -35,10 +35,11 @@
 			<loader v-if="!dataLoaded"></loader>
 			<div class="main_content_container" v-if="dataLoaded">
 			    <header-component></header-component>
-    			
+    			<main>
     			<transition name="custom-classes-transition" enter-active-class="fadeIn">
     				<router-view class="content" id="router_content"></router-view>
     			</transition>
+    			</main>
     			<div class="footer-div hidden-phone" id="footer-div">
     				<div class="footer-top page_container" style="overflow:visible;">
     					<div class="row" style="margin:auto">
