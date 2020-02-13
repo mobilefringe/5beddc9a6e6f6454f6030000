@@ -23,7 +23,7 @@
     },
         {
         "name": "News",
-        "id": "events_link",
+        "id": "news_link",
         "href": "/events",
         "show_sub_menu": false
     },
