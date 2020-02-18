@@ -98,7 +98,7 @@
     	<div class="menu-container hidden-phone ">
     		<div class="menu-div page_container">
     			<div class="row top_nav hidden_phone">
-					<nav id="primary_nav">
+					<nav id="primary_nav" role="navigation" aria-label="Main">
 						<ul>
 						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
 						        <router-link v-if="item.sub_menu == undefined" :to="item.href" class="hvr-underline-from-center">{{$t(item.name)}}</router-link>
