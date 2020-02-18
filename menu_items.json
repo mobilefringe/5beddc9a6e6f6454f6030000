@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Directory",
+        "id": "stores_link",
+        "href": "",
+        "show_sub_menu": false,
+        "sub_menu": [
+            {
+                "name": "Store Directory",
+                "href": "/stores"
+            },
+            {
+                "name": "Dining",
+                "href": "/dine"
+            }
+        ]
+    },
+    {
+        "name": "Promotions",
+        "id": "events_link",
+        "href": "/promotions",
+        "show_sub_menu": false
+    },
+        {
+        "name": "News",
+        "id": "news_link",
+        "href": "/events",
+        "show_sub_menu": false
+    },
+    {
+        "name": "Plaza Information",
+        "id": "mallInfo_link",
+        "href": "",
+        "show_sub_menu": false,
+        "sub_menu": [
+            
+            {
+                "name": "Directions",
+                "href": "/directions"
+            },
+            {
+                "name": "Our History",
+                "href": "/pages/rollinghills-our-history"
+            }
+        ]
+    },
+    {
+        "name": "Contact Us",
+        "id": "contact_link",
+        "href": "/contact_us"
+    }
+]
