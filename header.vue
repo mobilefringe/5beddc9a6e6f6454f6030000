@@ -40,7 +40,7 @@
     				</div>
     			</div>
     			<transition name="custom-classes-transition" enter-active-class="animated slideInDown" leave-active-class="animated slideOutUp">
-    				<div class="mobile_menu_container" v-show="show_mobile_menu">
+    				<div class="mobile_menu_container" v-show="show_mobile_menu" role="navigation" aria-label="Mobile">
     					<div class="opened_mobile_menu" >
     						<div class="text-left mobile-site-logo">
     							<img :src="propertyLogo"  :alt="property.name + ' Mobile Logo'">
