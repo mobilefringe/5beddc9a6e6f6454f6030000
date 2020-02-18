@@ -57,7 +57,7 @@
                                                     <i v-else class="fa fa-minus"></i>
                                                 </b-btn>
                                             </b-card-header>
-                                            <b-collapse :id="$t(item.name)" accordion="my-accordion" role="tabpanel" class="accordion_body">
+                                            <b-collapse :id="$t(item.name)" accordion="my-accordion" class="accordion_body">
                                                 <b-card-body v-for="sub_menu in item.sub_menu">
                                                     <p class="card-text">
                                                         <a v-if="sub_menu.external" :href="sub_menu.href" class="dropdown-item" target="_blank">{{sub_menu.name}}</a>
