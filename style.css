@@ -20,83 +20,83 @@ hr {
 
 @font-face {
     font-family: museosans100;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/985/original/MuseoSans_100.ttf?1412095488');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/985/original/MuseoSans_100.ttf?1412095488');  
 }
 @font-face {
     font-family: avenir light;
-    src: url('//mallmaverick.com/system/site_images/photos/000/011/188/original/avenir-light-webfont.ttf?1439220356');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/011/188/original/avenir-light-webfont.ttf?1439220356');  
 }
 
 @font-face {
     font-family: avenir heavy;
-    src: url('//mallmaverick.com/system/site_images/photos/000/011/187/original/Avenir-Black-webfont.ttf?1439220356');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/011/187/original/Avenir-Black-webfont.ttf?1439220356');  
 }
 
 @font-face {
     font-family: museo100;
-    src: url('//mallmaverick.com/system/site_images/photos/000/003/529/original/Museo100-Regular.ttf?1408648976');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/003/529/original/Museo100-Regular.ttf?1408648976');  
 }
 
 @font-face {
     font-family: museo300_italic;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/049/original/MuseoSans-300Italic.ttf?1411141624');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/049/original/MuseoSans-300Italic.ttf?1411141624');  
 }
 
 @font-face {
     font-family: helvetica;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/982/original/Helvetica.ttf?1412092433');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/982/original/Helvetica.ttf?1412092433');  
 }
 
 @font-face {
     font-family: helvetica;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/984/original/Helvetica-Bold.ttf?1412092469');
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/984/original/Helvetica-Bold.ttf?1412092469');
     font-weight:bold;
 }
 
 @font-face {
     font-family: helvetica;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/983/original/Helvetica-Light.ttf?1412092455');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/983/original/Helvetica-Light.ttf?1412092455');  
     font-weight: lighter;
 }
 
 @font-face {
     font-family: museo300sans;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/981/original/MuseoSans-300.ttf?1412092362');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/981/original/MuseoSans-300.ttf?1412092362');  
 }
 
 @font-face {
     font-family: museo300_regular;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/979/original/Museo300-Regular.ttf?1412092296');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/979/original/Museo300-Regular.ttf?1412092296');  
 }
 
 @font-face {
     font-family: museo500_regular;
-    src: url('//mallmaverick.com/system/site_images/photos/000/004/980/original/Museo500-Regular.ttf?1412092331');  
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/004/980/original/Museo500-Regular.ttf?1412092331');  
 }
 
 @font-face {
     font-family: archer_bold;
-    src: url('//mallmaverick.com/system/site_images/photos/000/003/986/original/Archer_Bold.ttf?1410890025');
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/003/986/original/Archer_Bold.ttf?1410890025');
 }
 
 @font-face {
     font-family: archer_semibold;
-    src: url('//mallmaverick.com/system/site_images/photos/000/003/990/original/archer-semibold.ttf?1410896143');
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/003/990/original/archer-semibold.ttf?1410896143');
 }
 
 @font-face {
     font-family: avenir_black;
-    src: url('//mallmaverick.com/system/site_images/photos/000/003/988/original/Avenir.ttf?1410890986');
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/003/988/original/Avenir.ttf?1410890986');
 }
 
 @font-face {
     font-family: avenir_book;
-    src: url('//mallmaverick.com/system/site_images/photos/000/003/988/original/AvenirLTStd-Roman.ttf?1410896301');
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/003/988/original/AvenirLTStd-Roman.ttf?1410896301');
 }
 
 @font-face {
     font-family: trade_gothic;
-    src: url('//mallmaverick.com/system/site_images/photos/000/003/998/original/TradeGothic-LT-Bold-CondensedNo20.ttf?1410896868');
+    src: url('//assets.mallmaverick.com/system/site_images/photos/000/003/998/original/TradeGothic-LT-Bold-CondensedNo20.ttf?1410896868');
 }
 $primary : #946f00;//d8a101;
 $font_family : arial;
