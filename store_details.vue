@@ -13,7 +13,7 @@
                   <div v-else class="no_logo_container">
                     <img
                       class="store_img"
-                      src="//assets..mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
+                      src="//assets.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
                       alt
                     >
                         <h1 class="no_logo_text">
@@ -167,7 +167,7 @@
                 ]),
                 getSVGurl() {
                     console.log("this.property.svgmap_url", this.property.svgmap_url)
-                    return "https://www.mallmaverick.com" + this.property.svgmap_url;
+                    return "https://assets.mallmaverick.com" + this.property.svgmap_url;
                 },
                 svgMapRef() {
                     return this.$refs.svgmap_ref;
