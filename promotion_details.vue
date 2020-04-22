@@ -13,7 +13,7 @@
                   <div v-else class="no_logo_container hidden_phone">
                     <img
                       class="store_img "
-                      src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
+                      src="//assets.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225"
                       alt
                     >
                         <h1 class="no_logo_text">
