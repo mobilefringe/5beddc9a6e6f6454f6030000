@@ -126,7 +126,7 @@
                     return all_stores
                 },
                 getSVGMap(){
-                  return "https://www.mallmaverick.com" + this.property.svgmap_url;  
+                  return "https://assets.mallmaverick.com" + this.property.svgmap_url;  
                 },
                 floorList () {
                     var floor_list = [];
