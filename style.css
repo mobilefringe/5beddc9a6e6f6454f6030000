@@ -1570,7 +1570,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 
 
 .left-arrow{
-    background:url("//mallmaverick.com/system/site_images/photos/000/005/360/original/link-left.gif?1414093307");
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/005/360/original/link-left.gif?1414093307");
     width:18px;
     height:18px;
     float:right;
@@ -1581,7 +1581,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 
 }
 .right-arrow{
-    background:url("//mallmaverick.com/system/site_images/photos/000/005/361/original/link-right.gif?1414093345");
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/005/361/original/link-right.gif?1414093345");
     width:18px;
     height:18px;
     margin-left:5px;
@@ -1593,7 +1593,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 }
 
 .up-arrow{
-    background:url("//mallmaverick.com/system/site_images/photos/000/003/674/original/link-up.gif?1409242754");
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/003/674/original/link-up.gif?1409242754");
     width:18px;
     height:18px;
     float:right;
@@ -1604,7 +1604,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 
 }
 .down-arrow{
-    background:url("//mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769");
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769");
     width:18px;
     height:18px;
     margin-left:5px;
@@ -1936,13 +1936,13 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 .contributer-select-div{
     overflow:hidden;
     width:200px;
-    background:url("//mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769") no-repeat scroll right 1px rgba(0, 0, 0, 0);
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769") no-repeat scroll right 1px rgba(0, 0, 0, 0);
     margin-bottom:40px;
     height:20px;
 }
 
 .contributer-select-div:hover{
-    background:url("//mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769") no-repeat scroll right 1px top -18px rgba(0, 0, 0, 0)
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769") no-repeat scroll right 1px top -18px rgba(0, 0, 0, 0)
 }
 
 .contributer-select{
@@ -2066,7 +2066,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 }
 
 .lined-box{
-    background:url("//mallmaverick.com/system/site_images/photos/000/003/868/original/slantBox.png?1410306302");
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/003/868/original/slantBox.png?1410306302");
     color:#5d5959;
     font-size:30px;
     height:30px;
@@ -2909,7 +2909,7 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
     overflow:hidden;
     float:right;
     margin-left:10px;
-    background:url("//mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769") no-repeat scroll right 0px white;
+    background:url("//assets.mallmaverick.com/system/site_images/photos/000/003/675/original/link-down.gif?1409242769") no-repeat scroll right 0px white;
     height:19px;
 }
 
