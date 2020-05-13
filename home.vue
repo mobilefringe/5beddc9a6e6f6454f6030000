@@ -142,6 +142,7 @@
                     this.dataLoaded = true;
                     this.popup = this.$store.state.popups[0];
                     this.meta = this.findMetaDataByPath(this.$route.path);
+                    this.$emit('updateHead');
                 });
             },
             watch : {
