@@ -14,7 +14,8 @@ require.config({
         'text': 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
         'json': 'https://unpkg.com/requirejs-plugins-current@1.0.3/src/json',
         'js-cookie': 'https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min',
-        'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
+        //'vue-meta': 'https://unpkg.com/vue-meta@1.0.4/lib/vue-meta.min',
+        'vue-head': 'https://cdn.rawgit.com/ktquez/vue-head/master/vue-head',
         'Fuse': 'https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.0.4/fuse.min',
         'datastore_mutation_types': 'https://mmvue.codecloudapp.com/datastore_mutation_types',
         'datastore_getters': 'https://mmvue.codecloudapp.com/datastore_getters',
@@ -45,16 +46,13 @@ require.config({
     }
 });
 
-require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vue-i18n', 'locales','jquery', 'moment', "vue-meta", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component",'vue-simple-spinner','vue!loader.vue', 'vue!header.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages,$, moment, Meta, tz, VueMoment, SocialSharing, VueSelect, SearchComponent, Spinner, Loader, Header) {
+require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vue-i18n', 'locales','jquery', 'moment', "vue-head", "moment-timezone", "vue-moment",'vue-social-sharing','vue-select', "vue!search-component",'vue-simple-spinner','vue!loader.vue', 'vue!header.vue'], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages,$, moment, VueHead, tz, VueMoment, SocialSharing, VueSelect, SearchComponent, Spinner, Loader, Header) {
     
-    Vue.use(Meta, {
-        keyName: 'metaInfo', // the component option name that vue-meta looks for meta info on.
-        tagIDKeyName: 'vmid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
-    });
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
     Vue.use(SocialSharing);
+    Vue.use(VueHead);
     
     /* initialize router */
     const router = new VueRouter({
